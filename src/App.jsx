@@ -68,30 +68,29 @@ const App = () => {
             </li>
           </ul>
         </div>
-
         <span className="logo header-text">LomaVibes</span>
         <span className="header-text">Fi/En</span>
       </div>
       <div className="body">
         <span className="body-item">
-          <div className="event-title"> </div>
-          <div className="event-content"></div>
-          <div className="event-adres"></div>
+          <div className="event-title"> Event name</div>
+          <div className="event-content">Event information</div>
+          <div className="event-adres">Event adres or google map link</div>
         </span>
         <span className="body-item">
-          <div className="event-title"> </div>
-          <div className="event-content"></div>
-          <div className="event-adres"></div>
+          <div className="event-title"> Event name</div>
+          <div className="event-content">Event information</div>
+          <div className="event-adres">Event adres or google map link</div>
         </span>
         <span className="body-item">
-          <div className="event-title"> </div>
-          <div className="event-content"></div>
-          <div className="event-adres"></div>
+          <div className="event-title"> Event name</div>
+          <div className="event-content">Event information</div>
+          <div className="event-adres">Event adres or google map link</div>
         </span>
         <span className="body-item">
-          <div className="event-title"> </div>
-          <div className="event-content"></div>
-          <div className="event-adres"></div>
+          <div className="event-title"> Event name</div>
+          <div className="event-content">Event information</div>
+          <div className="event-adres">Event adres or google map link</div>
         </span>
       </div>
       <div className="nav-bar">

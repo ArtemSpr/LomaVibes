@@ -80,6 +80,10 @@ button:focus-visible {
   }
 }
 
+.event-title {
+  border-bottom: 2px solid var(--green);
+}
+
 /*? Animate screen */
 
 .animateContainer {
@@ -168,6 +172,8 @@ button:focus-visible {
   left: 40px;
 }
 
+
+
 /*? Mobile adaptive */
 
 @media screen and (max-width: 480px) {
@@ -216,9 +222,11 @@ button:focus-visible {
 
   .logo {
     font-family: "Montserrat", sans-serif;
+    margin-left: 30vw;
   }
 
   .header-text {
+    font-family: "Montserrat", sans-serif;
     margin-top: 7px;
     font-size: 25px;
   }
@@ -232,10 +240,15 @@ button:focus-visible {
 
   .body-item {
     display: flex;
+    flex-direction: column;
     width: 85vw;
     height: 100px;
     border-radius: 10px;
     background-color: #fff;
+    color: #1a1a1a;
+    font-family: sans-serif;
+    font-size: 15px;
+    padding: 10px 10px 0 10px;
     margin: 20px 0 0 7.5vw;
   }
 
@@ -265,7 +278,7 @@ button:focus-visible {
 
 /*? Tablet adaptive  */
 
-@media screen and (min-width: 480px) and (max-width: 768px) {
+@media screen and (min-width: 480px) and (max-width: 769px) {
   #menuToggle {
     display: none;
   }
@@ -280,7 +293,7 @@ button:focus-visible {
   .header {
     width: 100vw;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
   }
 
   .menu img {
@@ -292,6 +305,11 @@ button:focus-visible {
     font-family: "Montserrat", sans-serif;
     margin-top: 10px;
     font-size: 30px;
+    color: var(--beige);
+  }
+
+  .logo {
+    padding-left: 25vw;
   }
 
   .body {
@@ -303,10 +321,15 @@ button:focus-visible {
 
   .body-item {
     display: flex;
+    flex-direction: column;
     width: 85vw;
     height: 100px;
     border-radius: 10px;
     background-color: #fff;
+    color: #1a1a1a;
+    font-family: sans-serif;
+    font-size: 15px;
+    padding: 10px 10px 0 10px;
     margin: 40px 0 0 7.5vw;
   }
 
@@ -335,7 +358,7 @@ button:focus-visible {
 
 /*? Desktop adaptive  */
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 770px) {
   .main {
     background-color: var(--green);
     display: flex;
@@ -364,10 +387,15 @@ button:focus-visible {
 
   .body-item {
     display: flex;
+    flex-direction: column;
     width: 85vw;
     height: 100px;
     border-radius: 10px;
     background-color: #fff;
+    color: #1a1a1a;
+    font-family: sans-serif;
+    font-size: 20px;
+    padding: 20px;
     margin: 40px 0 0 7.5vw;
   }
 
@@ -381,6 +409,7 @@ button:focus-visible {
 
   #menu a {
     color: var(--green);
+    margin-left: 20px;
   }
 
   #menu li {
@@ -394,6 +423,7 @@ button:focus-visible {
 
   #menu li:hover a {
     color: var(--beige);
+    transition: 1s ease;
   }
 
 
