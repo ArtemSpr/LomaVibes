@@ -1,12 +1,12 @@
 import { motion, AnimatePresence } from "framer-motion";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
-import Home from "./pages/Home";
-import Calendar from "./pages/Calendar";
-import SummerJob from "./pages/SummerJob";
-import Places from "./pages/Places";
-import Settings from "./pages/Settings";
-import AboutUs from "./pages/AboutUs";
+import Home from "./components/Home";
+import Calendar from "./components/Calendar/Calendar";
+import SummerJob from "./components/SummerJob/SummerJob";
+import Places from "./components/Places/Places";
+import Settings from "./components/Settings/Settings";
+import AboutUs from "./components/AboutUs/AboutUs";
 
 const App = () => {
   // const [visible, setVisible] = useState(true);

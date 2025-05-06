@@ -1,0 +1,236 @@
+:root {
+    --lightgrey: #3d3d3d;
+    --green: #578e7e;
+    --beige: #f5ecd5;
+    --lightyellow: #fffaec;
+    --white: #ffffff;
+    --accent: #a0c0b0;
+}
+
+.aboutus-container {
+    background: linear-gradient(to bottom, var(--lightyellow), var(--beige));
+    min-height: 100vh;
+    width: 100vw;
+    font-family: "Segoe UI", sans-serif;
+    color: var(--lightgrey);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#aboutus-menuToggle {
+    position: relative;
+    z-index: 1;
+}
+
+#aboutus-menuCheckbox {
+    display: none;
+}
+
+#aboutus-burgerIcon {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    cursor: pointer;
+    z-index: 3;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+#aboutus-burgerIcon .aboutus-bar {
+    width: 33px;
+    height: 4px;
+    background: var(--beige);
+    border-radius: 3px;
+    transition: all 0.4s ease;
+}
+
+#aboutus-menuCheckbox:checked+#aboutus-burgerIcon .aboutus-bar {
+    background: var(--green);
+}
+
+#aboutus-menuCheckbox:checked+#aboutus-burgerIcon .aboutus-bar:nth-child(1) {
+    transform: rotate(45deg) translate(5px, 8px);
+}
+
+#aboutus-menuCheckbox:checked+#aboutus-burgerIcon .aboutus-bar:nth-child(2) {
+    opacity: 0;
+}
+
+#aboutus-menuCheckbox:checked+#aboutus-burgerIcon .aboutus-bar:nth-child(3) {
+    transform: rotate(-45deg) translate(5px, -8px);
+}
+
+#aboutus-menu {
+    position: absolute;
+    left: -300px;
+    top: 80px;
+    width: 200px;
+    height: 660px;
+    margin: -100px 0 0 -50px;
+    padding-top: 125px;
+    background: var(--lightgrey);
+    list-style: none;
+    transition: left 0.5s;
+    color: var(--lightgrey);
+    font-family: sans-serif;
+}
+
+#aboutus-menu li {
+    padding: 10px 0;
+    font-size: 22px;
+    color: var(--green);
+    transition: color 0.3s;
+}
+
+#aboutus-menu li:hover {
+    color: var(--lightgrey);
+}
+
+#aboutus-menuCheckbox:checked~#aboutus-menu {
+    left: 40px;
+}
+
+#aboutus-menu a {
+    color: var(--green);
+    margin-left: 20px;
+}
+
+#aboutus-menu li {
+    margin-left: -30px;
+}
+
+#aboutus-menu li:hover {
+    background-color: var(--green);
+
+}
+
+#aboutus-menu li:hover a {
+    color: var(--beige);
+    transition: 1s ease;
+}
+
+.aboutus-active-link {
+    margin-top: 300px;
+}
+
+.aboutus-header {
+    display: flex;
+    width: 100vw;
+    height: 80px;
+    color: beige;
+    background-color: var(--green);
+    justify-content: space-between;
+}
+
+.aboutus-header-text {
+    margin: 10px 10px 0 0;
+    font-size: 30px;
+    font-family: "Montserrat", sans-serif;
+    display: flex;
+}
+
+.aboutus-logo {
+    margin-left: 120px;
+}
+
+.header {
+    width: 100%;
+    margin-bottom: 4vh;
+}
+
+.aboutus-bigTitle {
+    text-align: center;
+    margin-bottom: 6vh;
+    padding-bottom: 2vh;
+    border-bottom: 2px solid var(--green);
+    width: 100%;
+    max-width: 960px;
+}
+
+.aboutus-title {
+    font-size: 2.8vw;
+    color: var(--green);
+    margin-bottom: 0.5rem;
+    font-weight: 700;
+    text-shadow: 1px 1px 0 var(--lightyellow);
+    letter-spacing: 0.08em;
+}
+
+.aboutus-subtitle {
+    font-size: 1.1vw;
+    color: var(--accent);
+    font-style: italic;
+    margin-top: 0.5rem;
+}
+
+/* КОНТЕНТ */
+
+.aboutus-content {
+    background-color: var(--white);
+    border-radius: 1rem;
+    padding: 3vh 4vw;
+    box-shadow: 0 0.5rem 2rem rgba(0, 0, 0, 0.1);
+    font-size: 1.1rem;
+    line-height: 1.7;
+    max-width: 960px;
+    width: 100%;
+}
+
+.aboutus-content p {
+    margin-bottom: 2rem;
+}
+
+.highlight {
+    color: var(--green);
+    font-weight: 600;
+}
+
+/* ФУТЕР */
+
+.aboutus-footer {
+    text-align: center;
+    margin-top: 5vh;
+    font-size: 0.9rem;
+    opacity: 0.6;
+    width: 100%;
+}
+
+/* БУРГЕР І ЛОГО НЕ ЧІПАЄМО */
+
+/* АДАПТИВНІСТЬ */
+
+@media (max-width: 768px) {
+    .aboutus-title {
+        font-size: 6vw;
+    }
+
+    .aboutus-subtitle {
+        font-size: 3.5vw;
+    }
+
+    .aboutus-content {
+        font-size: 1rem;
+        padding: 2vh 5vw;
+    }
+
+    .aboutus-container {
+        padding: 4vh 5vw;
+    }
+}
+
+@media (max-width: 480px) {
+    .aboutus-title {
+        font-size: 7vw;
+    }
+
+    .aboutus-subtitle {
+        font-size: 4vw;
+    }
+
+    .aboutus-content {
+        font-size: 0.95rem;
+        padding: 1.5vh 5vw;
+    }
+}

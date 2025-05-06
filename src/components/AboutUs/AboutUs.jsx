@@ -1,7 +1,44 @@
+import "./AboutUs.css";
+import { Link } from "react-router-dom";
+
 const AboutUs = () => {
   return (
     <div className="aboutus-container">
-      <header className="aboutus-header">
+      <div className="aboutus-header">
+        <div id="aboutus-menuToggle">
+          <input type="checkbox" id="aboutus-menuCheckbox" />
+          <label htmlFor="aboutus-menuCheckbox" id="aboutus-burgerIcon">
+            <div className="aboutus-bar"></div>
+            <div className="aboutus-bar"></div>
+            <div className="aboutus-bar"></div>
+          </label>
+
+          <ul id="aboutus-menu">
+            <li>
+              <Link to="/">Home</Link>
+            </li>
+            <li>
+              <Link to="/calendar">Calendar</Link>
+            </li>
+            <li>
+              <Link to="/summerjob">Summer Job</Link>
+            </li>
+            <li>
+              <Link to="/places">Places</Link>
+            </li>
+            <li>
+              <Link to="/settings">Settings</Link>
+            </li>
+            <li className="aboutus-active-link">
+              <Link to="/aboutus">About us</Link>
+            </li>
+          </ul>
+        </div>
+        <span className="aboutus-logo aboutus-header-text">LomaVibes</span>
+        <span className="aboutus-header-text">Fi/En</span>
+      </div>
+
+      <header className="aboutus-bigTitle">
         <h1 className="aboutus-title">About Us</h1>
         <p className="aboutus-subtitle">
           Discover the essence of Finnish summer
