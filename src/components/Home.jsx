@@ -1,12 +1,27 @@
 import { Link } from "react-router-dom";
+import { useRef, useState, useEffect } from "react";
 
 // import Animatelogo from "../public/217490777.png";
 import ListIcon from "../../public/list-icon.svg";
 import JobIcon from "../../public/job-icon.svg";
 import SettingsIcon from "../../public/settings-icon.svg";
 import CalendarIcon from "../../public/calendar-icon.svg";
+import PersonIcon from "../../public/person-icon.svg";
 
 const Home = () => {
+  const [isOpen, setIsOpen] = useState(false);
+  const dropdownRef = useRef(null);
+
+  useEffect(() => {
+    const handleClickOutside = (event) => {
+      if (dropdownRef.current && !dropdownRef.current.contains(event.target)) {
+        setIsOpen(false);
+      }
+    };
+    document.addEventListener("mousedown", handleClickOutside);
+    return () => document.removeEventListener("mousedown", handleClickOutside);
+  }, []);
+
   return (
     <div className="main">
       {/* <div className="animateContainer">
@@ -58,7 +73,34 @@ const Home = () => {
           </ul>
         </div>
         <span className="logo header-text">LomaVibes</span>
-        <span className="header-text">Fi/En</span>
+        <span className="header-text">
+          <div className="dropdown-container" ref={dropdownRef}>
+            <img
+              src={PersonIcon}
+              height={40}
+              alt="Settings Icon"
+              className="dropdown-icon"
+              onClick={() => setIsOpen(!isOpen)}
+            />
+
+            {isOpen && (
+              <div className="dropdown-popup">
+                <input
+                  type="text"
+                  placeholder="Username"
+                  className="dropdown-input"
+                />
+                <input
+                  type="password"
+                  placeholder="Password"
+                  className="dropdown-input"
+                />
+                <button className="dropdown-button">Log in</button>
+              </div>
+            )}
+          </div>
+          Fi/En
+        </span>
       </div>
       <div className="body">
         <span className="body-item">
