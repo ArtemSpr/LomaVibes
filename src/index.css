@@ -19,6 +19,8 @@
   --green: #578e7e;
   --beige: #f5ecd5;
   --lightyellow: #fffaec;
+  --white: #ffffff;
+  --accent: #a0c0b0;
 }
 
 a {
@@ -172,7 +174,68 @@ button:focus-visible {
   left: 40px;
 }
 
+/*? About us page  */
 
+.aboutus-container {
+  background: linear-gradient(to bottom, var(--lightyellow), var(--beige));
+  min-height: 100vh;
+  padding: 5vh 8vw;
+  font-family: "Segoe UI", sans-serif;
+  color: var(--lightgrey);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.aboutus-header {
+  text-align: center;
+  margin-bottom: 6vh;
+  padding-bottom: 2vh;
+  border-bottom: 2px solid var(--green);
+  position: relative;
+}
+
+.aboutus-title {
+  font-size: 3vw;
+  color: var(--green);
+  margin-bottom: 0.5rem;
+  font-weight: 700;
+  text-shadow: 1px 1px 0 var(--lightyellow);
+  letter-spacing: 0.08em;
+}
+
+.aboutus-subtitle {
+  font-size: 1vw;
+  color: var(--accent);
+  font-style: italic;
+  margin-top: 0.5rem;
+}
+
+
+.aboutus-content {
+  background-color: var(--white);
+  border-radius: 1rem;
+  padding: 3vh 4vw;
+  box-shadow: 0 0.5rem 2rem rgba(0, 0, 0, 0.1);
+  font-size: 1.1rem;
+  line-height: 1.7;
+}
+
+.aboutus-content p {
+  margin-bottom: 2rem;
+}
+
+.highlight {
+  color: var(--green);
+  font-weight: 600;
+}
+
+.aboutus-footer {
+  text-align: center;
+  margin-top: 5vh;
+  font-size: 0.9rem;
+  opacity: 0.6;
+}
 
 /*? Mobile adaptive */
 
@@ -425,7 +488,5 @@ button:focus-visible {
     color: var(--beige);
     transition: 1s ease;
   }
-
-
 
 }
