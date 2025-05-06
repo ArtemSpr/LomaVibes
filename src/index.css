@@ -26,6 +26,7 @@ a {
   color: #646cff;
   text-decoration: inherit;
 }
+
 a:hover {
   color: #535bf2;
 }
@@ -54,9 +55,11 @@ button {
   cursor: pointer;
   transition: border-color 0.25s;
 }
+
 button:hover {
   border-color: #646cff;
 }
+
 button:focus,
 button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
@@ -67,13 +70,17 @@ button:focus-visible {
     color: #213547;
     background-color: #ffffff;
   }
+
   a:hover {
     color: #747bff;
   }
+
   button {
     background-color: #f9f9f9;
   }
 }
+
+/*? Animate screen */
 
 .animateContainer {
   display: none;
@@ -84,7 +91,90 @@ button:focus-visible {
   width: 100%;
 }
 
+/*? Burger menu  */
+
+#menuToggle {
+  position: relative;
+  z-index: 1;
+}
+
+#menuCheckbox {
+  display: none;
+}
+
+#burgerIcon {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  cursor: pointer;
+  z-index: 3;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+#burgerIcon .bar {
+  width: 33px;
+  height: 4px;
+  background: var(--beige);
+  border-radius: 3px;
+  transition: all 0.4s ease;
+}
+
+#menuCheckbox:checked+#burgerIcon .bar {
+  background: var(--lightgrey);
+}
+
+#menuCheckbox:checked+#burgerIcon .bar:nth-child(1) {
+  transform: rotate(45deg) translate(5px, 8px);
+}
+
+#menuCheckbox:checked+#burgerIcon .bar:nth-child(2) {
+  opacity: 0;
+}
+
+#menuCheckbox:checked+#burgerIcon .bar:nth-child(3) {
+  transform: rotate(-45deg) translate(5px, -8px);
+}
+
+#menu {
+  position: absolute;
+  left: -300px;
+  top: 80px;
+  width: 200px;
+  height: 660px;
+  margin: -100px 0 0 -50px;
+  /* padding: 50px; */
+  padding-top: 125px;
+  background: var(--lightyellow);
+  list-style: none;
+  transition: left 0.5s;
+  color: var(--lightgrey);
+  font-family: sans-serif;
+}
+
+#menu li {
+  padding: 10px 0;
+  font-size: 22px;
+  color: var(--green);
+  transition: color 0.3s;
+}
+
+#menu li:hover {
+  color: var(--lightgrey);
+}
+
+#menuCheckbox:checked~#menu {
+  left: 40px;
+}
+
+/*? Mobile adaptive */
+
 @media screen and (max-width: 480px) {
+  #menuToggle {
+    display: none;
+  }
+
   .animateContainer {
     width: 43rem;
     height: 93rem;
@@ -109,7 +199,6 @@ button:focus-visible {
     min-width: 320px;
     min-height: 100vh;
     background-color: #578e7e;
-    font-size: 22px;
   }
 
   .header {
@@ -119,10 +208,10 @@ button:focus-visible {
     color: beige;
     justify-content: space-between;
   }
+
   .menu img {
     height: 50px;
     width: 50px;
-    margin-top: 2px;
   }
 
   .logo {
@@ -131,6 +220,7 @@ button:focus-visible {
 
   .header-text {
     margin-top: 7px;
+    font-size: 25px;
   }
 
   .body {
@@ -171,4 +261,141 @@ button:focus-visible {
     height: 75px;
     width: 75px;
   }
+}
+
+/*? Tablet adaptive  */
+
+@media screen and (min-width: 480px) and (max-width: 768px) {
+  #menuToggle {
+    display: none;
+  }
+
+  .main {
+    background-color: var(--green);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .header {
+    width: 100vw;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .menu img {
+    height: 75px;
+    width: 75px;
+  }
+
+  .header-text {
+    font-family: "Montserrat", sans-serif;
+    margin-top: 10px;
+    font-size: 30px;
+  }
+
+  .body {
+    display: flex;
+    flex: 1;
+    height: 100%;
+    flex-direction: column;
+  }
+
+  .body-item {
+    display: flex;
+    width: 85vw;
+    height: 100px;
+    border-radius: 10px;
+    background-color: #fff;
+    margin: 40px 0 0 7.5vw;
+  }
+
+  .nav-bar {
+    display: flex;
+    background-color: var(--lightgrey);
+    height: 80px;
+    width: 100%;
+  }
+
+  .nav-bar-container {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+  }
+
+  .nav-bar-item {
+    display: block;
+  }
+
+  .nav-bar-item img {
+    height: 75px;
+    width: 75px;
+  }
+}
+
+/*? Desktop adaptive  */
+
+@media screen and (min-width: 768px) {
+  .main {
+    background-color: var(--green);
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+
+  .header {
+    display: flex;
+    width: 100vw;
+    height: 80px;
+    color: beige;
+    justify-content: space-between;
+  }
+
+  .header-text {
+    margin: 10px 10px 0 0;
+    font-size: 30px;
+    font-family: "Montserrat", sans-serif;
+    display: flex;
+  }
+
+  .logo {
+    margin-left: 120px;
+  }
+
+  .body-item {
+    display: flex;
+    width: 85vw;
+    height: 100px;
+    border-radius: 10px;
+    background-color: #fff;
+    margin: 40px 0 0 7.5vw;
+  }
+
+  .nav-bar-item img {
+    display: none;
+  }
+
+  .aboutUs {
+    margin-top: 300px;
+  }
+
+  #menu a {
+    color: var(--green);
+  }
+
+  #menu li {
+    margin-left: -30px;
+  }
+
+  #menu li:hover {
+    background-color: var(--green);
+
+  }
+
+  #menu li:hover a {
+    color: var(--beige);
+  }
+
+
+
 }

@@ -2,7 +2,7 @@ import { motion, AnimatePresence } from "framer-motion";
 import { useState, useEffect } from "react";
 
 import Animatelogo from "../public/217490777.png";
-import Menu from "../public/burger-menu.png";
+import Menu from "../public/menu.svg";
 import ListIcon from "../public/list-icon.svg";
 import JobIcon from "../public/job-icon.svg";
 import SettingsIcon from "../public/settings-icon.svg";
@@ -39,41 +39,80 @@ const App = () => {
         </AnimatePresence>
       </div>
       <div className="header">
-        <div className="menu">
-          <img src={Menu}></img>
+        <div id="menuToggle">
+          <input type="checkbox" id="menuCheckbox" />
+          <label for="menuCheckbox" id="burgerIcon">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+          </label>
+
+          <ul id="menu">
+            <li>
+              <a href="#">Home</a>
+            </li>
+            <li>
+              <a href="#">Calendar</a>
+            </li>
+            <li>
+              <a href="#">Summer Job</a>
+            </li>
+            <li>
+              <a href="#">Places</a>
+            </li>
+            <li>
+              <a href="#">Settings</a>
+            </li>
+            <li className="aboutUs">
+              <a href="#">About us</a>
+            </li>
+          </ul>
         </div>
-        <span className="header-text logo">LomaVibes</span>
+
+        <span className="logo header-text">LomaVibes</span>
         <span className="header-text">Fi/En</span>
       </div>
       <div className="body">
         <span className="body-item">
-          <div className="event-title">Evnet name </div>
-          <div className="event-content">Eve</div>
+          <div className="event-title"> </div>
+          <div className="event-content"></div>
           <div className="event-adres"></div>
         </span>
-        <span className="body-item"></span>
-        <span className="body-item"></span>
-        <span className="body-item"></span>
+        <span className="body-item">
+          <div className="event-title"> </div>
+          <div className="event-content"></div>
+          <div className="event-adres"></div>
+        </span>
+        <span className="body-item">
+          <div className="event-title"> </div>
+          <div className="event-content"></div>
+          <div className="event-adres"></div>
+        </span>
+        <span className="body-item">
+          <div className="event-title"> </div>
+          <div className="event-content"></div>
+          <div className="event-adres"></div>
+        </span>
       </div>
       <div className="nav-bar">
         <div className="nav-bar-container">
           <span className="nav-bar-item">
-            <a src="">
+            <a src="/pages/SummerJob.jsx">
               <img src={JobIcon}></img>
             </a>
           </span>
           <span className="nav-bar-item">
-            <a src="">
+            <a src="#">
               <img src={CalendarIcon}></img>
             </a>
           </span>
           <span className="nav-bar-item">
-            <a src="">
+            <a src="#">
               <img src={ListIcon}></img>
             </a>
           </span>
           <span className="nav-bar-item">
-            <a src="">
+            <a src="#">
               <img src={SettingsIcon}></img>
             </a>
           </span>
