@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+
 :root {
     --lightgrey: #3d3d3d;
     --green: #578e7e;
@@ -7,11 +9,16 @@
     --accent: #a0c0b0;
 }
 
+::selection {
+    background-color: var(--green);
+    color: var(--lightgrey);
+}
+
 .aboutus-container {
     background: linear-gradient(to bottom, var(--lightyellow), var(--beige));
     min-height: 100vh;
     width: 100vw;
-    font-family: "Segoe UI", sans-serif;
+    font-family: "Quicksand", sans-serif;
     color: var(--lightgrey);
     display: flex;
     flex-direction: column;
@@ -125,14 +132,35 @@
 }
 
 .aboutus-header-text {
-    margin: 10px 10px 0 0;
+    margin: 10px 0 0 0;
     font-size: 30px;
-    font-family: "Montserrat", sans-serif;
+    font-family: "Bungee", sans-serif;
+    font-weight: 400;
+    font-style: normal;
     display: flex;
+    user-select: none;
+}
+
+.aboutus-header-text a {
+    color: var(--beige);
+
 }
 
 .aboutus-logo {
     margin-left: 120px;
+
+}
+
+.languageBtn {
+    background-color: var(--green);
+    color: var(--beige);
+    margin: -20px 10px 0 0;
+    padding: 0 0 0 0;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.2s ease;
 }
 
 .header {
@@ -156,6 +184,7 @@
     font-weight: 700;
     text-shadow: 1px 1px 0 var(--lightyellow);
     letter-spacing: 0.08em;
+    user-select: none;
 }
 
 .aboutus-subtitle {
@@ -165,20 +194,20 @@
     margin-top: 0.5rem;
 }
 
-/* КОНТЕНТ */
 
-.aboutus-content {
+.aboutus-content-text {
     background-color: var(--white);
     border-radius: 1rem;
     padding: 3vh 4vw;
+    margin-left: -5vw;
     box-shadow: 0 0.5rem 2rem rgba(0, 0, 0, 0.1);
-    font-size: 1.1rem;
+    font-size: 20px;
     line-height: 1.7;
     max-width: 960px;
     width: 100%;
 }
 
-.aboutus-content p {
+.aboutus-content-text p {
     margin-bottom: 2rem;
 }
 
@@ -186,8 +215,6 @@
     color: var(--green);
     font-weight: 600;
 }
-
-/* ФУТЕР */
 
 .aboutus-footer {
     text-align: center;
@@ -197,30 +224,19 @@
     width: 100%;
 }
 
-/* БУРГЕР І ЛОГО НЕ ЧІПАЄМО */
+/*? Android version */
 
-/* АДАПТИВНІСТЬ */
-
-@media (max-width: 768px) {
-    .aboutus-title {
-        font-size: 6vw;
+@media screen and (max-width: 480px) {
+    #aboutus-menuToggle {
+        display: none;
     }
 
-    .aboutus-subtitle {
-        font-size: 3.5vw;
+    .aboutus-header-text {
+        font-size: 21px;
+        padding-top: 15px;
+        margin-left: 3px;
     }
 
-    .aboutus-content {
-        font-size: 1rem;
-        padding: 2vh 5vw;
-    }
-
-    .aboutus-container {
-        padding: 4vh 5vw;
-    }
-}
-
-@media (max-width: 480px) {
     .aboutus-title {
         font-size: 7vw;
     }
@@ -231,6 +247,61 @@
 
     .aboutus-content {
         font-size: 0.95rem;
-        padding: 1.5vh 5vw;
+        flex: 1;
+    }
+
+    .aboutus-content-text {
+        font-size: clamp(12px, 3vw, 16px);
+        width: 80vw;
+        margin-left: 1vw;
+    }
+}
+
+/*? Tablet version  */
+
+@media screen and (min-width: 426px) and (max-width: 768px) {
+    #aboutus-menuToggle {
+        display: none;
+    }
+
+    .aboutus-bigTitle {
+        padding: 0 5vw 0 5vw;
+        width: 80vw;
+    }
+
+    .aboutus-header-text {
+        font-size: clamp(28px, 3vw, 40px);
+        padding-top: 10px;
+        margin-left: 3px;
+    }
+
+    .aboutus-title {
+        font-size: 6vw;
+    }
+
+    .aboutus-subtitle {
+        font-size: 3.5vw;
+    }
+
+    .aboutus-content {
+        flex: 1;
+        margin-bottom: 5vw;
+    }
+
+    .aboutus-content-text {
+        width: 80vw;
+        margin-left: 1vw;
+        font-size: clamp(14px, 2vw, 24px);
+        padding: 2vh 5vw;
+        height: 20vw 60vw 80vw;
+    }
+}
+
+/*? Desktop version  */
+
+@media screen and (min-width: 769px) {
+    .aboutus-content {
+        width: 70vw;
+        margin-bottom: 5vw;
     }
 }

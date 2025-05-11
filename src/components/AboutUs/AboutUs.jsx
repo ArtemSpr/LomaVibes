@@ -1,7 +1,21 @@
 import "./AboutUs.css";
 import { Link } from "react-router-dom";
+import LogIn from "../LogIn/LogIn";
+
+import ListIcon from "../../../public/list-icon.svg";
+import JobIcon from "../../../public/job-icon.svg";
+import SettingsIcon from "../../../public/settings-icon.svg";
+import CalendarIcon from "../../../public/calendar-icon.svg";
+
+import { useTranslation, Trans } from "react-i18next";
 
 const AboutUs = () => {
+  const { t, i18n } = useTranslation();
+
+  const lngs = {
+    fi: { nativeName: "Fi/" },
+    en: { nativeName: "Eng" },
+  };
   return (
     <div className="aboutus-container">
       <div className="aboutus-header">
@@ -12,63 +26,110 @@ const AboutUs = () => {
             <div className="aboutus-bar"></div>
             <div className="aboutus-bar"></div>
           </label>
-
           <ul id="aboutus-menu">
             <li>
-              <Link to="/">Home</Link>
+              <Trans
+                i18nKey="home"
+                components={{
+                  6: <Link to="/">Home</Link>,
+                }}
+              />
             </li>
             <li>
-              <Link to="/calendar">Calendar</Link>
+              <Trans
+                i18nKey="calendar"
+                components={{ 1: <Link to="/calendar">Calendar</Link> }}
+              />
             </li>
             <li>
-              <Link to="/summerjob">Summer Job</Link>
+              <Trans
+                i18nKey="summerjob"
+                components={{ 2: <Link to="/summerjob">Summer Job</Link> }}
+              />
             </li>
             <li>
-              <Link to="/places">Places</Link>
+              <Trans
+                i18nKey="places"
+                components={{ 3: <Link to="/places">Places</Link> }}
+              />
             </li>
             <li>
-              <Link to="/settings">Settings</Link>
+              <Trans
+                i18nKey="settings"
+                components={{ 4: <Link to="/settings">Settings</Link> }}
+              />
             </li>
             <li className="aboutus-active-link">
-              <Link to="/aboutus">About us</Link>
+              <Trans
+                i18nKey="aboutus"
+                components={{ 5: <Link to="/aboutus">About Us</Link> }}
+              />
             </li>
           </ul>
         </div>
-        <span className="aboutus-logo aboutus-header-text">LomaVibes</span>
-        <span className="aboutus-header-text">Fi/En</span>
+        <span className="aboutus-logo aboutus-header-text">
+          <Link to="/">LomaVibes</Link>
+        </span>
+        <span className="aboutus-header-text">
+          <LogIn />
+          {Object.keys(lngs).map((lng) => (
+            <button
+              type="submit"
+              key={lng}
+              onClick={() => i18n.changeLanguage(lng)}
+              disabled={i18n.resolvedLanguage === lng}
+              className="languageBtn"
+            >
+              {lngs[lng].nativeName}
+            </button>
+          ))}
+        </span>
       </div>
 
       <header className="aboutus-bigTitle">
-        <h1 className="aboutus-title">About Us</h1>
-        <p className="aboutus-subtitle">
-          Discover the essence of Finnish summer
-        </p>
+        <h1 className="aboutus-title">{t("AboutUsTitle")}</h1>
+        <p className="aboutus-subtitle">{t("AboutUsSubTitle")}</p>
       </header>
       <section className="aboutus-content">
-        <p>
-          Welcome to <span className="highlight">Loma Vibes Finland</span>, your
-          go-to guide for exploring the best summer events, must-see
-          destinations, and exciting places to visit across Finland! Our team is
-          passionate about showcasing the beauty and vibrant culture of Finland,
-          helping both locals and tourists make the most of their summer
-          adventures.
-        </p>
-        <p>
-          From the stunning landscapes of Lapland to the lively festivals in
-          Helsinki, we aim to bring you the most up-to-date information on
-          everything Finland has to offer. Our app features real-time details on
-          summer events, local attractions, and hidden gems, all conveniently
-          integrated with Google Maps to help you navigate your way through
-          Finland’s most picturesque spots.
-        </p>
-        <p>
-          Whether you're looking for outdoor activities, cultural experiences,
-          or a relaxing retreat,{" "}
-          <span className="highlight">Loma Vibes Finland</span> ensures you'll
-          never miss out on the essence of a Finnish summer.
-        </p>
+        <div className="aboutus-content-text">
+          <Trans
+            i18nKey="aboutFirstIndent"
+            components={{ p: <p />, span: <span className="highlight" /> }}
+          />
+
+          <Trans i18nKey="aboutSecondIndent" />
+          <Trans
+            i18nKey="aboutThirdIndent"
+            components={{ span: <span className="highlight"></span> }}
+          />
+
+          <footer className="aboutus-footer">© 2025 Loma Vibes Finland</footer>
+        </div>
       </section>
-      <footer className="aboutus-footer">© 2025 Loma Vibes Finland</footer>
+      <div className="nav-bar">
+        <div className="nav-bar-container">
+          <span className="nav-bar-item">
+            <Link to="/summerjob">
+              <img src={JobIcon}></img>
+            </Link>
+          </span>
+          <span className="nav-bar-item">
+            <Link to="/calendar">
+              <img src={CalendarIcon}></img>
+            </Link>
+          </span>
+          <span className="nav-bar-item">
+            <Link to="/places">
+              <img src={ListIcon}></img>
+            </Link>
+          </span>
+          <span className="nav-bar-item">
+            <Link to="/settings">
+              <img src={SettingsIcon}></img>
+            </Link>
+          </span>
+        </div>
+      </div>
     </div>
   );
 };

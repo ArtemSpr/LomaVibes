@@ -111,6 +111,10 @@
     display: flex;
 }
 
+.settings-header-text a {
+    color: var(--beige);
+}
+
 .settings-logo {
     margin-left: 120px;
 }
@@ -159,7 +163,7 @@
 
 .settings-footer {
     text-align: center;
-    margin-top: auto;
+    margin-bottom: 20vh;
 }
 
 .save-button {
@@ -177,12 +181,55 @@
     background-color: var(--accent);
 }
 
-@media (max-width: 600px) {
-    .settings-title h1 {
-        font-size: 2rem;
+
+/*? Mobile adaptive  */
+
+@media screen and (max-width: 480px) {
+    #settings-menuToggle {
+        display: none;
     }
 
-    .settings-section h2 {
-        font-size: 1.2rem;
+    .settings-header-text {
+        font-size: clamp(20px, 3vw, 24px);
+        width: 80vw;
+        margin: 6vw 0 0 12vw;
+    }
+
+    .settings-section {
+        width: 60vw;
+        margin-left: 15vw;
+    }
+}
+
+/*? Tablet adaptive  */
+
+@media screen and (min-width: 480px) and (max-width: 769px) {
+    #settings-menuToggle {
+        display: none;
+    }
+
+    .settings-header-text {
+        font-size: clamp(28px, 3vw, 40px);
+        margin-top: 15px;
+        padding: 0 40px 0 10px;
+    }
+
+    .settings-section {
+        width: 80vw;
+        margin-left: 7vw;
+    }
+}
+
+/*? Desktop adaptive  */
+
+@media screen and (min-width: 770px) {
+    .setting-header {
+        display: flex;
+        justify-content: center;
+    }
+
+    .settings-logo {
+        flex: 1;
+        margin-left: 40vw;
     }
 }
