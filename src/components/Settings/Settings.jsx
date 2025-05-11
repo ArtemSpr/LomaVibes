@@ -1,5 +1,6 @@
 import "./Settings.css";
 import { Link } from "react-router-dom";
+import LogIn from "../LogIn/LogIn";
 
 const SettingsPage = () => {
   return (
@@ -34,8 +35,13 @@ const SettingsPage = () => {
             </li>
           </ul>
         </div>
-        <span className="settings-logo settings-header-text">LomaVibes</span>
-        <span className="settings-header-text">Fi/En</span>
+        <span className="settings-header-text settings-logo">
+          <Link to="/">LomaVibes</Link>
+        </span>
+        <span className="settings-header-text">
+          <LogIn />
+          Fi/En
+        </span>
       </div>
 
       <div className="settings-title">
