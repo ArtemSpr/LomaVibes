@@ -2,7 +2,7 @@ import { useRef, useState, useEffect } from "react";
 import { useTranslation, Trans } from "react-i18next";
 
 import "./LogIn.css";
-import PersonIcon from "/Users/s2401573/Documents/Project/LomaVibes/public/person-icon.svg";
+import PersonIcon from "/Users/s2401575/Documents/portfolio/ohjelmointi/ohjelmistokehitysprojekti-1/LomaVibes2/LomaVibes/public/person-icon.svg";
 
 const LogIn = () => {
   const [isOpen, setIsOpen] = useState(false);
