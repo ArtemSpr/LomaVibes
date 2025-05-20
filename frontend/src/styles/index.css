@@ -112,6 +112,85 @@ button:focus-visible {
   width: 100%;
 }
 
+/* Theme switcher */
+
+.theme-switcher {
+  position: fixed;
+  top: 20px;
+  left: 70px;
+  display: flex;
+  align-items: center;
+}
+
+.theme-toggle-checkbox {
+  display: none;
+}
+
+.theme-toggle-label {
+  display: flex;
+  align-items: center;
+  background-color: #00a896;
+  border-radius: 30px;
+  position: relative;
+  width: 50px;
+  height: 25px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.theme-toggle-checkbox:checked+.theme-toggle-label {
+  background-color: #88c0d0;
+}
+
+.theme-icon {
+  position: absolute;
+  font-size: 18px;
+  transition:
+    opacity 0.3s ease,
+    transform 0.3s ease;
+  opacity: 0;
+  /* Початкове значення для невидимості */
+}
+
+.sun {
+  left: 30px;
+  transition:
+    opacity 0.3s ease,
+    transform 0.3s ease;
+}
+
+.moon {
+  right: -20px;
+  transition:
+    opacity 0.3s ease,
+    transform 0.3s ease;
+}
+
+/* Змінюємо opacity і transform для анімації */
+.theme-toggle-checkbox:checked+.theme-toggle-label .sun {
+  opacity: 0;
+  transform: translateX(25px);
+}
+
+.theme-toggle-checkbox:checked+.theme-toggle-label .moon {
+  opacity: 1;
+  transform: translateX(-25px);
+}
+
+.theme-toggle-checkbox:not(:checked)+.theme-toggle-label .sun {
+  opacity: 1;
+  transform: translateX(-25px);
+}
+
+.theme-toggle-checkbox:not(:checked)+.theme-toggle-label .moon {
+  opacity: 0;
+  transform: translateX(25px);
+}
+
+.hidden {
+  display: none;
+}
+
 /* Mobile Styles */
 @media screen and (max-width: 426px) {
   #menuToggle {

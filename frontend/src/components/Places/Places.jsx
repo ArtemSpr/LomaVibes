@@ -11,10 +11,9 @@ import CalendarIcon from "../../../public/calendar-icon.svg";
 import { useTranslation, Trans } from "react-i18next";
 import { useEffect, useState } from "react";
 import axios from "axios";
+import TimeSwitcher from "../../TimeSwitcher.jsx";
 
 const Places = () => {
-  const [showAll, setShowAll] = useState(false);
-
   const { t, i18n } = useTranslation();
 
   const lngs = {
@@ -29,6 +28,7 @@ const Places = () => {
       .get("http://localhost:5266/api/places")
       .then((response) => {
         setNotes(response.data);
+        console.log("Places data fetched successfully");
         console.log(response.data);
       })
       .catch((error) => {
@@ -67,10 +67,10 @@ const Places = () => {
                 components={{ 4: <Link to="/settings">Settings</Link> }}
               />
             </li>
-            <li className="places-active-link">
+            <li className="aboutus-active-link">
               <Trans
-                i18nKey="places"
-                components={{ 5: <Link to="/places">Places</Link> }}
+                i18nKey="aboutus"
+                components={{ 5: <Link to="/aboutus">About Us</Link> }}
               />
             </li>
           </ul>
@@ -104,10 +104,6 @@ const Places = () => {
             <div className="event-title">{notes.name}</div>
             <div className="event-content">{notes.description}</div>
             <div className="event-adres">{notes.adress}</div>
-            <button className="event-btn" onClick={() => setShowAll(!showAll)}>
-              {" "}
-              {t("showMore")}
-            </button>
           </li>
         ))}
       </ul>

@@ -14,6 +14,8 @@ import JobIcon from "../../public/job-icon.svg";
 import SettingsIcon from "../../public/settings-icon.svg";
 import CalendarIcon from "../../public/calendar-icon.svg";
 
+import TimeSwitcher from "../TimeSwitcher.jsx";
+
 const Home = () => {
   const [visible, setVisible] = useState(true);
   const [hidden, setHidden] = useState(false);
@@ -91,6 +93,8 @@ const Home = () => {
             </li>
           </ul>
         </div>
+        <TimeSwitcher />
+
         <span className="logo header-text">
           <Link to="/">LomaVibes</Link>
         </span>
