@@ -26,6 +26,7 @@ i18next
           settingsTitle: "Settings",
           settingsSection: "Some settings",
           settingsbutton: "Save changes",
+          showMore: "Show more",
           aboutFirstIndent:
             "<p>Welcome to <span>Loma Vibes Finland</span>, your go-to guide for exploring the best summer events, must-see destinations, and exciting places to visit across Finland! Our team is passionate about showcasing the beauty and vibrant culture of Finland, helping both locals and tourists make the most of their summer adventures.</p>",
           aboutSecondIndent:
@@ -53,6 +54,7 @@ i18next
           settingsTitle: "Asetukset",
           settingsSection: "Johtaa asetuksia",
           settingsbutton: "Tallenna muutokset",
+          showMore: "Näytä lisää",
           aboutFirstIndent:
             "<p>Tervetuloa <span>Loma Vibes Finlandiin</span>, oppaaseesi parhaisiin kesätapahtumiin, nähtävyyksiin ja jännittäviin paikkoihin ympäri Suomea! Tiimimme on intohimoinen esittelemään Suomen kauneutta ja elävää kulttuuria, auttaen sekä paikallisia että matkailijoita saamaan kaiken irti kesän seikkailuista.</p>",
           aboutSecondIndent:

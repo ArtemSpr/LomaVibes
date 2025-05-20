@@ -13,6 +13,8 @@ import { useEffect, useState } from "react";
 import axios from "axios";
 
 const Places = () => {
+  const [showAll, setShowAll] = useState(false);
+
   const { t, i18n } = useTranslation();
 
   const lngs = {
@@ -27,6 +29,7 @@ const Places = () => {
       .get("http://localhost:5266/api/places")
       .then((response) => {
         setNotes(response.data);
+        console.log(response.data);
       })
       .catch((error) => {
         console.error("There was an error fetching the notes!", error);
@@ -101,6 +104,10 @@ const Places = () => {
             <div className="event-title">{notes.name}</div>
             <div className="event-content">{notes.description}</div>
             <div className="event-adres">{notes.adress}</div>
+            <button className="event-btn" onClick={() => setShowAll(!showAll)}>
+              {" "}
+              {t("showMore")}
+            </button>
           </li>
         ))}
       </ul>

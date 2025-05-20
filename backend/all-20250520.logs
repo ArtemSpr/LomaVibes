@@ -2415,3 +2415,234 @@ WHERE [u].[Username] = @__request_Username_0 AND [u].[Password] = @__request_Pas
 2025-05-20 22:55:07.275 +03:00 [INF] Executed endpoint 'PlacesController.Get (backend)'
 2025-05-20 22:55:07.276 +03:00 [INF] HTTP GET /api/places responded 200 in 5.3493 ms
 2025-05-20 22:55:07.276 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5266/api/places - 200 null application/json; charset=utf-8 6.5697ms
+2025-05-20 22:57:08.118 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5266/api/places - null null
+2025-05-20 22:57:08.119 +03:00 [INF] CORS policy execution successful.
+2025-05-20 22:57:08.119 +03:00 [INF] Executing endpoint 'PlacesController.Get (backend)'
+2025-05-20 22:57:08.120 +03:00 [INF] Route matched with {action = "Get", controller = "Places"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Get() on controller PlacesController (backend).
+2025-05-20 22:57:08.121 +03:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Place, backend, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-05-20 22:57:08.121 +03:00 [INF] Executed action PlacesController.Get (backend) in 0.771ms
+2025-05-20 22:57:08.121 +03:00 [INF] Executed endpoint 'PlacesController.Get (backend)'
+2025-05-20 22:57:08.121 +03:00 [INF] HTTP GET /api/places responded 200 in 1.9177 ms
+2025-05-20 22:57:08.121 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5266/api/places - 200 null application/json; charset=utf-8 2.8973ms
+2025-05-20 22:58:16.113 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5266/api/places - null null
+2025-05-20 22:58:16.116 +03:00 [INF] CORS policy execution successful.
+2025-05-20 22:58:16.116 +03:00 [INF] Executing endpoint 'PlacesController.Get (backend)'
+2025-05-20 22:58:16.117 +03:00 [INF] Route matched with {action = "Get", controller = "Places"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Get() on controller PlacesController (backend).
+2025-05-20 22:58:16.118 +03:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Place, backend, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-05-20 22:58:16.118 +03:00 [INF] Executed action PlacesController.Get (backend) in 1.4861ms
+2025-05-20 22:58:16.119 +03:00 [INF] Executed endpoint 'PlacesController.Get (backend)'
+2025-05-20 22:58:16.119 +03:00 [INF] HTTP GET /api/places responded 200 in 3.1799 ms
+2025-05-20 22:58:16.119 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5266/api/places - 200 null application/json; charset=utf-8 5.6941ms
+2025-05-20 22:58:30.110 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5266/api/places - null null
+2025-05-20 22:58:30.111 +03:00 [INF] CORS policy execution successful.
+2025-05-20 22:58:30.111 +03:00 [INF] Executing endpoint 'PlacesController.Get (backend)'
+2025-05-20 22:58:30.111 +03:00 [INF] Route matched with {action = "Get", controller = "Places"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Get() on controller PlacesController (backend).
+2025-05-20 22:58:30.113 +03:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Place, backend, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-05-20 22:58:30.114 +03:00 [INF] Executed action PlacesController.Get (backend) in 2.175ms
+2025-05-20 22:58:30.114 +03:00 [INF] Executed endpoint 'PlacesController.Get (backend)'
+2025-05-20 22:58:30.114 +03:00 [INF] HTTP GET /api/places responded 200 in 3.2003 ms
+2025-05-20 22:58:30.114 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5266/api/places - 200 null application/json; charset=utf-8 4.2293ms
+2025-05-20 22:58:31.107 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5266/api/places - null null
+2025-05-20 22:58:31.108 +03:00 [INF] CORS policy execution successful.
+2025-05-20 22:58:31.108 +03:00 [INF] Executing endpoint 'PlacesController.Get (backend)'
+2025-05-20 22:58:31.108 +03:00 [INF] Route matched with {action = "Get", controller = "Places"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Get() on controller PlacesController (backend).
+2025-05-20 22:58:31.109 +03:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Place, backend, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-05-20 22:58:31.109 +03:00 [INF] Executed action PlacesController.Get (backend) in 0.7396ms
+2025-05-20 22:58:31.109 +03:00 [INF] Executed endpoint 'PlacesController.Get (backend)'
+2025-05-20 22:58:31.109 +03:00 [INF] HTTP GET /api/places responded 200 in 1.6456 ms
+2025-05-20 22:58:31.110 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5266/api/places - 200 null application/json; charset=utf-8 2.7093ms
+2025-05-20 22:59:16.700 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5266/api/places - null null
+2025-05-20 22:59:16.701 +03:00 [INF] CORS policy execution successful.
+2025-05-20 22:59:16.701 +03:00 [INF] Executing endpoint 'PlacesController.Get (backend)'
+2025-05-20 22:59:16.702 +03:00 [INF] Route matched with {action = "Get", controller = "Places"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Get() on controller PlacesController (backend).
+2025-05-20 22:59:16.703 +03:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Place, backend, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-05-20 22:59:16.704 +03:00 [INF] Executed action PlacesController.Get (backend) in 2.2637ms
+2025-05-20 22:59:16.705 +03:00 [INF] Executed endpoint 'PlacesController.Get (backend)'
+2025-05-20 22:59:16.705 +03:00 [INF] HTTP GET /api/places responded 200 in 3.7986 ms
+2025-05-20 22:59:16.705 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5266/api/places - 200 null application/json; charset=utf-8 5.1822ms
+2025-05-20 23:01:20.075 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5266/api/places - null null
+2025-05-20 23:01:20.078 +03:00 [INF] CORS policy execution successful.
+2025-05-20 23:01:20.079 +03:00 [INF] Executing endpoint 'PlacesController.Get (backend)'
+2025-05-20 23:01:20.079 +03:00 [INF] Route matched with {action = "Get", controller = "Places"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Get() on controller PlacesController (backend).
+2025-05-20 23:01:20.082 +03:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Place, backend, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-05-20 23:01:20.083 +03:00 [INF] Executed action PlacesController.Get (backend) in 3.5019ms
+2025-05-20 23:01:20.083 +03:00 [INF] Executed endpoint 'PlacesController.Get (backend)'
+2025-05-20 23:01:20.085 +03:00 [INF] HTTP GET /api/places responded 200 in 6.5898 ms
+2025-05-20 23:01:20.085 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5266/api/places - 200 null application/json; charset=utf-8 9.4586ms
+2025-05-20 23:01:21.474 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5266/api/places - null null
+2025-05-20 23:01:21.475 +03:00 [INF] CORS policy execution successful.
+2025-05-20 23:01:21.476 +03:00 [INF] Executing endpoint 'PlacesController.Get (backend)'
+2025-05-20 23:01:21.476 +03:00 [INF] Route matched with {action = "Get", controller = "Places"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Get() on controller PlacesController (backend).
+2025-05-20 23:01:21.477 +03:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Place, backend, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-05-20 23:01:21.478 +03:00 [INF] Executed action PlacesController.Get (backend) in 1.7721ms
+2025-05-20 23:01:21.478 +03:00 [INF] Executed endpoint 'PlacesController.Get (backend)'
+2025-05-20 23:01:21.479 +03:00 [INF] HTTP GET /api/places responded 200 in 3.6920 ms
+2025-05-20 23:01:21.479 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5266/api/places - 200 null application/json; charset=utf-8 4.604ms
+2025-05-20 23:01:58.128 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5266/api/places - null null
+2025-05-20 23:01:58.128 +03:00 [INF] CORS policy execution successful.
+2025-05-20 23:01:58.128 +03:00 [INF] Executing endpoint 'PlacesController.Get (backend)'
+2025-05-20 23:01:58.128 +03:00 [INF] Route matched with {action = "Get", controller = "Places"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Get() on controller PlacesController (backend).
+2025-05-20 23:01:58.129 +03:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Place, backend, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-05-20 23:01:58.130 +03:00 [INF] Executed action PlacesController.Get (backend) in 1.0949ms
+2025-05-20 23:01:58.130 +03:00 [INF] Executed endpoint 'PlacesController.Get (backend)'
+2025-05-20 23:01:58.130 +03:00 [INF] HTTP GET /api/places responded 200 in 2.1986 ms
+2025-05-20 23:01:58.131 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5266/api/places - 200 null application/json; charset=utf-8 3.3274ms
+2025-05-20 23:08:44.119 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5266/api/places - null null
+2025-05-20 23:08:44.121 +03:00 [INF] CORS policy execution successful.
+2025-05-20 23:08:44.122 +03:00 [INF] Executing endpoint 'PlacesController.Get (backend)'
+2025-05-20 23:08:44.122 +03:00 [INF] Route matched with {action = "Get", controller = "Places"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Get() on controller PlacesController (backend).
+2025-05-20 23:08:44.124 +03:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Place, backend, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-05-20 23:08:44.125 +03:00 [INF] Executed action PlacesController.Get (backend) in 2.6648ms
+2025-05-20 23:08:44.125 +03:00 [INF] Executed endpoint 'PlacesController.Get (backend)'
+2025-05-20 23:08:44.125 +03:00 [INF] HTTP GET /api/places responded 200 in 4.1233 ms
+2025-05-20 23:08:44.126 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5266/api/places - 200 null application/json; charset=utf-8 6.694ms
+2025-05-20 23:10:49.121 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5266/api/places - null null
+2025-05-20 23:10:49.122 +03:00 [INF] CORS policy execution successful.
+2025-05-20 23:10:49.122 +03:00 [INF] Executing endpoint 'PlacesController.Get (backend)'
+2025-05-20 23:10:49.122 +03:00 [INF] Route matched with {action = "Get", controller = "Places"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Get() on controller PlacesController (backend).
+2025-05-20 23:10:49.123 +03:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Place, backend, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-05-20 23:10:49.124 +03:00 [INF] Executed action PlacesController.Get (backend) in 1.7108ms
+2025-05-20 23:10:49.124 +03:00 [INF] Executed endpoint 'PlacesController.Get (backend)'
+2025-05-20 23:10:49.124 +03:00 [INF] HTTP GET /api/places responded 200 in 2.6017 ms
+2025-05-20 23:10:49.125 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5266/api/places - 200 null application/json; charset=utf-8 3.8945ms
+2025-05-20 23:10:51.911 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5266/api/places - null null
+2025-05-20 23:10:51.914 +03:00 [INF] CORS policy execution successful.
+2025-05-20 23:10:51.914 +03:00 [INF] Executing endpoint 'PlacesController.Get (backend)'
+2025-05-20 23:10:51.914 +03:00 [INF] Route matched with {action = "Get", controller = "Places"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Get() on controller PlacesController (backend).
+2025-05-20 23:10:51.915 +03:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Place, backend, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-05-20 23:10:51.915 +03:00 [INF] Executed action PlacesController.Get (backend) in 1.0627ms
+2025-05-20 23:10:51.916 +03:00 [INF] Executed endpoint 'PlacesController.Get (backend)'
+2025-05-20 23:10:51.916 +03:00 [INF] HTTP GET /api/places responded 200 in 2.2652 ms
+2025-05-20 23:10:51.917 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5266/api/places - 200 null application/json; charset=utf-8 5.7921ms
+2025-05-20 23:11:17.126 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5266/api/places - null null
+2025-05-20 23:11:17.128 +03:00 [INF] CORS policy execution successful.
+2025-05-20 23:11:17.128 +03:00 [INF] Executing endpoint 'PlacesController.Get (backend)'
+2025-05-20 23:11:17.129 +03:00 [INF] Route matched with {action = "Get", controller = "Places"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Get() on controller PlacesController (backend).
+2025-05-20 23:11:17.130 +03:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Place, backend, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-05-20 23:11:17.130 +03:00 [INF] Executed action PlacesController.Get (backend) in 0.6095ms
+2025-05-20 23:11:17.130 +03:00 [INF] Executed endpoint 'PlacesController.Get (backend)'
+2025-05-20 23:11:17.130 +03:00 [INF] HTTP GET /api/places responded 200 in 2.4573 ms
+2025-05-20 23:11:17.130 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5266/api/places - 200 null application/json; charset=utf-8 4.4081ms
+2025-05-20 23:11:41.377 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5266/api/places - null null
+2025-05-20 23:11:41.377 +03:00 [INF] CORS policy execution successful.
+2025-05-20 23:11:41.377 +03:00 [INF] Executing endpoint 'PlacesController.Get (backend)'
+2025-05-20 23:11:41.377 +03:00 [INF] Route matched with {action = "Get", controller = "Places"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Get() on controller PlacesController (backend).
+2025-05-20 23:11:41.378 +03:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Place, backend, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-05-20 23:11:41.378 +03:00 [INF] Executed action PlacesController.Get (backend) in 0.6167ms
+2025-05-20 23:11:41.378 +03:00 [INF] Executed endpoint 'PlacesController.Get (backend)'
+2025-05-20 23:11:41.379 +03:00 [INF] HTTP GET /api/places responded 200 in 1.2985 ms
+2025-05-20 23:11:41.379 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5266/api/places - 200 null application/json; charset=utf-8 2.0602ms
+2025-05-20 23:11:44.273 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5266/api/places - null null
+2025-05-20 23:11:44.273 +03:00 [INF] CORS policy execution successful.
+2025-05-20 23:11:44.273 +03:00 [INF] Executing endpoint 'PlacesController.Get (backend)'
+2025-05-20 23:11:44.274 +03:00 [INF] Route matched with {action = "Get", controller = "Places"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Get() on controller PlacesController (backend).
+2025-05-20 23:11:44.274 +03:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Place, backend, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-05-20 23:11:44.275 +03:00 [INF] Executed action PlacesController.Get (backend) in 0.8918ms
+2025-05-20 23:11:44.275 +03:00 [INF] Executed endpoint 'PlacesController.Get (backend)'
+2025-05-20 23:11:44.275 +03:00 [INF] HTTP GET /api/places responded 200 in 1.7117 ms
+2025-05-20 23:11:44.275 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5266/api/places - 200 null application/json; charset=utf-8 2.4924ms
+2025-05-20 23:11:46.883 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5266/api/places - null null
+2025-05-20 23:11:46.884 +03:00 [INF] CORS policy execution successful.
+2025-05-20 23:11:46.884 +03:00 [INF] Executing endpoint 'PlacesController.Get (backend)'
+2025-05-20 23:11:46.884 +03:00 [INF] Route matched with {action = "Get", controller = "Places"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Get() on controller PlacesController (backend).
+2025-05-20 23:11:46.885 +03:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Place, backend, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-05-20 23:11:46.886 +03:00 [INF] Executed action PlacesController.Get (backend) in 1.2479ms
+2025-05-20 23:11:46.886 +03:00 [INF] Executed endpoint 'PlacesController.Get (backend)'
+2025-05-20 23:11:46.886 +03:00 [INF] HTTP GET /api/places responded 200 in 2.2037 ms
+2025-05-20 23:11:46.886 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5266/api/places - 200 null application/json; charset=utf-8 2.795ms
+2025-05-20 23:19:24.373 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5266/api/places - null null
+2025-05-20 23:19:24.374 +03:00 [INF] CORS policy execution successful.
+2025-05-20 23:19:24.374 +03:00 [INF] Executing endpoint 'PlacesController.Get (backend)'
+2025-05-20 23:19:24.375 +03:00 [INF] Route matched with {action = "Get", controller = "Places"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Get() on controller PlacesController (backend).
+2025-05-20 23:19:24.383 +03:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Place, backend, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-05-20 23:19:24.384 +03:00 [INF] Executed action PlacesController.Get (backend) in 8.6967ms
+2025-05-20 23:19:24.384 +03:00 [INF] Executed endpoint 'PlacesController.Get (backend)'
+2025-05-20 23:19:24.384 +03:00 [INF] HTTP GET /api/places responded 200 in 9.8880 ms
+2025-05-20 23:19:24.384 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5266/api/places - 200 null application/json; charset=utf-8 11.5598ms
+2025-05-20 23:19:39.136 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5266/api/places - null null
+2025-05-20 23:19:39.137 +03:00 [INF] CORS policy execution successful.
+2025-05-20 23:19:39.137 +03:00 [INF] Executing endpoint 'PlacesController.Get (backend)'
+2025-05-20 23:19:39.137 +03:00 [INF] Route matched with {action = "Get", controller = "Places"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Get() on controller PlacesController (backend).
+2025-05-20 23:19:39.139 +03:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Place, backend, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-05-20 23:19:39.139 +03:00 [INF] Executed action PlacesController.Get (backend) in 1.5149ms
+2025-05-20 23:19:39.140 +03:00 [INF] Executed endpoint 'PlacesController.Get (backend)'
+2025-05-20 23:19:39.140 +03:00 [INF] HTTP GET /api/places responded 200 in 3.5465 ms
+2025-05-20 23:19:39.140 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5266/api/places - 200 null application/json; charset=utf-8 4.2313ms
+2025-05-20 23:19:46.338 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5266/api/places - null null
+2025-05-20 23:19:46.339 +03:00 [INF] CORS policy execution successful.
+2025-05-20 23:19:46.339 +03:00 [INF] Executing endpoint 'PlacesController.Get (backend)'
+2025-05-20 23:19:46.340 +03:00 [INF] Route matched with {action = "Get", controller = "Places"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Get() on controller PlacesController (backend).
+2025-05-20 23:19:46.341 +03:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Place, backend, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-05-20 23:19:46.342 +03:00 [INF] Executed action PlacesController.Get (backend) in 1.472ms
+2025-05-20 23:19:46.342 +03:00 [INF] Executed endpoint 'PlacesController.Get (backend)'
+2025-05-20 23:19:46.342 +03:00 [INF] HTTP GET /api/places responded 200 in 3.0459 ms
+2025-05-20 23:19:46.343 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5266/api/places - 200 null application/json; charset=utf-8 4.2457ms
+2025-05-20 23:19:58.116 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5266/api/places - null null
+2025-05-20 23:19:58.116 +03:00 [INF] CORS policy execution successful.
+2025-05-20 23:19:58.117 +03:00 [INF] Executing endpoint 'PlacesController.Get (backend)'
+2025-05-20 23:19:58.117 +03:00 [INF] Route matched with {action = "Get", controller = "Places"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Get() on controller PlacesController (backend).
+2025-05-20 23:19:58.117 +03:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Place, backend, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-05-20 23:19:58.118 +03:00 [INF] Executed action PlacesController.Get (backend) in 0.753ms
+2025-05-20 23:19:58.118 +03:00 [INF] Executed endpoint 'PlacesController.Get (backend)'
+2025-05-20 23:19:58.118 +03:00 [INF] HTTP GET /api/places responded 200 in 1.6895 ms
+2025-05-20 23:19:58.118 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5266/api/places - 200 null application/json; charset=utf-8 2.592ms
+2025-05-20 23:27:39.739 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5266/api/places - null null
+2025-05-20 23:27:39.740 +03:00 [INF] CORS policy execution successful.
+2025-05-20 23:27:39.741 +03:00 [INF] Executing endpoint 'PlacesController.Get (backend)'
+2025-05-20 23:27:39.741 +03:00 [INF] Route matched with {action = "Get", controller = "Places"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Get() on controller PlacesController (backend).
+2025-05-20 23:27:39.752 +03:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Place, backend, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-05-20 23:27:39.755 +03:00 [INF] Executed action PlacesController.Get (backend) in 13.1042ms
+2025-05-20 23:27:39.755 +03:00 [INF] Executed endpoint 'PlacesController.Get (backend)'
+2025-05-20 23:27:39.755 +03:00 [INF] HTTP GET /api/places responded 200 in 15.0580 ms
+2025-05-20 23:27:39.755 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5266/api/places - 200 null application/json; charset=utf-8 16.6302ms
+2025-05-20 23:31:34.531 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5266/api/places - null null
+2025-05-20 23:31:34.531 +03:00 [INF] CORS policy execution successful.
+2025-05-20 23:31:34.532 +03:00 [INF] Executing endpoint 'PlacesController.Get (backend)'
+2025-05-20 23:31:34.532 +03:00 [INF] Route matched with {action = "Get", controller = "Places"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Get() on controller PlacesController (backend).
+2025-05-20 23:31:34.540 +03:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Place, backend, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-05-20 23:31:34.541 +03:00 [INF] Executed action PlacesController.Get (backend) in 8.268ms
+2025-05-20 23:31:34.541 +03:00 [INF] Executed endpoint 'PlacesController.Get (backend)'
+2025-05-20 23:31:34.541 +03:00 [INF] HTTP GET /api/places responded 200 in 9.6358 ms
+2025-05-20 23:31:34.542 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5266/api/places - 200 null application/json; charset=utf-8 11ms
+2025-05-20 23:31:39.166 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5266/api/places - null null
+2025-05-20 23:31:39.166 +03:00 [INF] CORS policy execution successful.
+2025-05-20 23:31:39.166 +03:00 [INF] Executing endpoint 'PlacesController.Get (backend)'
+2025-05-20 23:31:39.167 +03:00 [INF] Route matched with {action = "Get", controller = "Places"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Get() on controller PlacesController (backend).
+2025-05-20 23:31:39.168 +03:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Place, backend, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-05-20 23:31:39.168 +03:00 [INF] Executed action PlacesController.Get (backend) in 0.9475ms
+2025-05-20 23:31:39.169 +03:00 [INF] Executed endpoint 'PlacesController.Get (backend)'
+2025-05-20 23:31:39.169 +03:00 [INF] HTTP GET /api/places responded 200 in 2.7348 ms
+2025-05-20 23:31:39.169 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5266/api/places - 200 null application/json; charset=utf-8 3.4141ms
+2025-05-20 23:32:21.849 +03:00 [INF] Application is shutting down...
+2025-05-20 23:32:38.487 +03:00 [INF] Now listening on: http://localhost:5266
+2025-05-20 23:32:38.598 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-05-20 23:32:38.598 +03:00 [INF] Hosting environment: Development
+2025-05-20 23:32:38.598 +03:00 [INF] Content root path: /Users/s2401573/Documents/Project/LomaVibes/backend
+2025-05-20 23:33:12.877 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5266/api/places - null null
+2025-05-20 23:33:12.889 +03:00 [INF] CORS policy execution successful.
+2025-05-20 23:33:12.889 +03:00 [WRN] Failed to determine the https port for redirect.
+2025-05-20 23:33:12.892 +03:00 [INF] Executing endpoint 'PlacesController.Get (backend)'
+2025-05-20 23:33:12.899 +03:00 [INF] Route matched with {action = "Get", controller = "Places"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Get() on controller PlacesController (backend).
+2025-05-20 23:33:12.931 +03:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Place, backend, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-05-20 23:33:12.947 +03:00 [INF] Executed action PlacesController.Get (backend) in 46.2046ms
+2025-05-20 23:33:12.948 +03:00 [INF] Executed endpoint 'PlacesController.Get (backend)'
+2025-05-20 23:33:12.949 +03:00 [INF] HTTP GET /api/places responded 200 in 61.1997 ms
+2025-05-20 23:33:12.951 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5266/api/places - 200 null application/json; charset=utf-8 74.2587ms
+2025-05-20 23:33:25.851 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5266/api/places - null null
+2025-05-20 23:33:25.854 +03:00 [INF] CORS policy execution successful.
+2025-05-20 23:33:25.854 +03:00 [INF] Executing endpoint 'PlacesController.Get (backend)'
+2025-05-20 23:33:25.855 +03:00 [INF] Route matched with {action = "Get", controller = "Places"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Get() on controller PlacesController (backend).
+2025-05-20 23:33:25.857 +03:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Place, backend, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-05-20 23:33:25.857 +03:00 [INF] Executed action PlacesController.Get (backend) in 2.2657ms
+2025-05-20 23:33:25.858 +03:00 [INF] Executed endpoint 'PlacesController.Get (backend)'
+2025-05-20 23:33:25.858 +03:00 [INF] HTTP GET /api/places responded 200 in 4.5039 ms
+2025-05-20 23:33:25.858 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5266/api/places - 200 null application/json; charset=utf-8 7.9672ms
+2025-05-20 23:34:09.125 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5266/api/places - null null
+2025-05-20 23:34:09.128 +03:00 [INF] CORS policy execution successful.
+2025-05-20 23:34:09.128 +03:00 [INF] Executing endpoint 'PlacesController.Get (backend)'
+2025-05-20 23:34:09.128 +03:00 [INF] Route matched with {action = "Get", controller = "Places"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Get() on controller PlacesController (backend).
+2025-05-20 23:34:09.130 +03:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Place, backend, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-05-20 23:34:09.132 +03:00 [INF] Executed action PlacesController.Get (backend) in 3.7437ms
+2025-05-20 23:34:09.133 +03:00 [INF] Executed endpoint 'PlacesController.Get (backend)'
+2025-05-20 23:34:09.133 +03:00 [INF] HTTP GET /api/places responded 200 in 5.5100 ms
+2025-05-20 23:34:09.133 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5266/api/places - 200 null application/json; charset=utf-8 7.8736ms

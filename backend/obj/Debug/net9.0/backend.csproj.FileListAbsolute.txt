@@ -176,3 +176,4 @@
 /Users/s2401573/Documents/Project/LomaVibes/backend/obj/Debug/net9.0/backend.pdb
 /Users/s2401573/Documents/Project/LomaVibes/backend/obj/Debug/net9.0/backend.genruntimeconfig.cache
 /Users/s2401573/Documents/Project/LomaVibes/backend/obj/Debug/net9.0/ref/backend.dll
+/Users/s2401573/Documents/Project/LomaVibes/backend/bin/Debug/net9.0/logs/important.json

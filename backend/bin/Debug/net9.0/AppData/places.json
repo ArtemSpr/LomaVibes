@@ -1,184 +1,124 @@
 {
   "places": [
     {
-      "id": "1",
-      "name": "Helsinki Summer Jazz",
-      "description": "Live jazz performances by international artists by the harbor.",
+      "id": "16",
+      "name": "Kuopion Kesämarkkinat",
+      "description": "Perinteiset kesämarkkinat torilla, tarjolla lähiruokaa, käsitöitä ja musiikkiesityksiä.",
+      "adress": "Tulliportinkatu 1, Kuopio",
+      "date": "2025-07-11",
+      "status": "tulossa",
       "location": {
-        "latitude": 60.1695,
-        "longitude": 24.9354
-      },
-      "adress": "Kaivopuisto, Helsinki",
-      "date": "2025-07-12",
-      "status": "upcoming"
+        "latitude": 62.8924,
+        "longitude": 27.677
+      }
     },
     {
-      "id": "2",
-      "name": "Midnight Sun Marathon",
-      "description": "Annual marathon under the midnight sun in northern Finland.",
+      "id": "17",
+      "name": "Kotkan Meripäivät",
+      "description": "Koko perheen merijuhla, jossa on paraateja, veneajeluita ja konsertteja Kotkan satamassa.",
+      "adress": "Satamakatu 4, Kotka",
+      "date": "2025-07-24",
+      "status": "tulossa",
       "location": {
-        "latitude": 66.5039,
-        "longitude": 25.7294
-      },
-      "adress": "Läntinen Alakatu 3, Rovaniemi",
-      "date": "2025-06-21",
-      "status": "upcoming"
+        "latitude": 60.4666,
+        "longitude": 26.9484
+      }
     },
     {
-      "id": "3",
-      "name": "Oulu Food Carnival",
-      "description": "Street food, local delicacies and cooking shows.",
+      "id": "18",
+      "name": "Savonlinnan Oopperajuhlat",
+      "description": "Maailmankuulu oopperafestivaali Olavinlinnan historiallisessa miljöössä.",
+      "adress": "Olavinkatu 27, Savonlinna",
+      "date": "2025-07-05",
+      "status": "tulossa",
       "location": {
-        "latitude": 65.0121,
-        "longitude": 25.4651
-      },
-      "adress": "Torikatu 8, Oulu",
-      "date": "2025-08-05",
-      "status": "upcoming"
+        "latitude": 61.8674,
+        "longitude": 28.8862
+      }
     },
     {
-      "id": "4",
-      "name": "Espoo Outdoor Film Night",
-      "description": "Open-air cinema event featuring classic summer movies.",
-      "location": {
-        "latitude": 60.2055,
-        "longitude": 24.6559
-      },
-      "adress": "Leppävaaran puisto, Espoo",
-      "date": "2025-07-25",
-      "status": "upcoming"
-    },
-    {
-      "id": "5",
-      "name": "Tampere Rock Festival",
-      "description": "Three days of rock, indie and alternative music.",
-      "location": {
-        "latitude": 61.4978,
-        "longitude": 23.761
-      },
-      "adress": "Ratinanniemi, Tampere",
-      "date": "2025-07-18",
-      "status": "upcoming"
-    },
-    {
-      "id": "6",
-      "name": "Jyväskylä Art Walk",
-      "description": "Open galleries and public art installations across the city.",
-      "location": {
-        "latitude": 62.2426,
-        "longitude": 25.7473
-      },
-      "adress": "Kauppakatu 5, Jyväskylä",
-      "date": "2025-08-10",
-      "status": "upcoming"
-    },
-    {
-      "id": "7",
-      "name": "Lappeenranta Lake Regatta",
-      "description": "Sailing competition and lake festivities.",
-      "location": {
-        "latitude": 61.0594,
-        "longitude": 28.1887
-      },
-      "adress": "Satamatie 9, Lappeenranta",
-      "date": "2025-06-30",
-      "status": "upcoming"
-    },
-    {
-      "id": "8",
-      "name": "Seinäjoki Dance Weekend",
-      "description": "Dance workshops and performances for all ages.",
-      "location": {
-        "latitude": 62.7903,
-        "longitude": 22.8406
-      },
-      "adress": "Kalevankatu 17, Seinäjoki",
-      "date": "2025-07-08",
-      "status": "upcoming"
-    },
-    {
-      "id": "9",
-      "name": "Porvoo Medieval Fair",
-      "description": "Costumes, jousting and market stalls in medieval style.",
-      "location": {
-        "latitude": 60.3932,
-        "longitude": 25.6633
-      },
-      "adress": "Vanha Porvoo",
-      "date": "2025-08-15",
-      "status": "upcoming"
-    },
-    {
-      "id": "10",
-      "name": "Turku River Jazz",
-      "description": "Jazz along the Aura riverbanks with food and drink stalls.",
-      "location": {
-        "latitude": 60.4518,
-        "longitude": 22.2666
-      },
-      "adress": "Aurakatu 2, Turku",
+      "id": "19",
+      "name": "Kajaanin Runoviikko",
+      "description": "Viikko täynnä runoutta, lausuntaa ja kirjallisuuskeskusteluja eri puolilla Kajaania.",
+      "adress": "Linnankatu 6, Kajaani",
       "date": "2025-07-02",
-      "status": "upcoming"
+      "status": "tulossa",
+      "location": {
+        "latitude": 64.2285,
+        "longitude": 27.7284
+      }
     },
     {
-      "id": "11",
-      "name": "Rauma Lace Week",
-      "description": "Traditional lace-making with modern twist and family events.",
+      "id": "20",
+      "name": "Mikkelin Viinijuhlat",
+      "description": "Viiniä, ruokaa ja livemusiikkia Mikkelin kesäillassa Saimaan rannalla.",
+      "adress": "Porrassalmenkatu 18, Mikkeli",
+      "date": "2025-07-19",
+      "status": "tulossa",
       "location": {
-        "latitude": 61.131,
-        "longitude": 21.5074
-      },
-      "adress": "Kuninkaankatu 20, Rauma",
-      "date": "2025-07-27",
-      "status": "upcoming"
+        "latitude": 61.6886,
+        "longitude": 27.2744
+      }
     },
     {
-      "id": "12",
-      "name": "Vaasa Summer Theater",
-      "description": "Outdoor performances of Finnish classics and comedies.",
+      "id": "21",
+      "name": "Pori Jazz",
+      "description": "Yksi Suomen suurimmista musiikkifestivaaleista, jossa jazz kohtaa popin ja soulin.",
+      "adress": "Kirjurinluoto, Pori",
+      "date": "2025-07-17",
+      "status": "tulossa",
       "location": {
-        "latitude": 63.0951,
-        "longitude": 21.6158
-      },
-      "adress": "Hovioikeudenpuistikko 5, Vaasa",
-      "date": "2025-08-01",
-      "status": "upcoming"
+        "latitude": 61.4847,
+        "longitude": 21.7836
+      }
     },
     {
-      "id": "13",
-      "name": "Kemi Snow & Summer Fusion",
-      "description": "Snow castle exhibition open even in summer!",
+      "id": "22",
+      "name": "Rovaniemen Luontopäivät",
+      "description": "Tutustu Lapin luontoon opastetuilla retkillä, näyttelyillä ja työpajoilla.",
+      "adress": "Ounasvaara, Rovaniemi",
+      "date": "2025-06-26",
+      "status": "tulossa",
       "location": {
-        "latitude": 65.7333,
-        "longitude": 24.5624
-      },
-      "adress": "Lumilinnankatu 1, Kemi",
-      "date": "2025-06-28",
-      "status": "upcoming"
+        "latitude": 66.507,
+        "longitude": 25.7292
+      }
     },
     {
-      "id": "14",
-      "name": "Hämeenlinna Folk Fest",
-      "description": "Traditional folk music and dance from Finland and beyond.",
+      "id": "23",
+      "name": "Helsingin Saaristoseikkailu",
+      "description": "Seikkailullinen tapahtuma saaristossa veneilyllä, tehtävärasteilla ja luonnossa liikkumisella.",
+      "adress": "Liuskaluoto, Helsinki",
+      "date": "2025-08-06",
+      "status": "tulossa",
       "location": {
-        "latitude": 60.9959,
-        "longitude": 24.4643
-      },
-      "adress": "Keskuskatu 10, Hämeenlinna",
-      "date": "2025-08-09",
-      "status": "upcoming"
+        "latitude": 60.147,
+        "longitude": 24.9519
+      }
     },
     {
-      "id": "15",
-      "name": "Lahti Eco Summer Fair",
-      "description": "Green living fair with workshops, local food and nature tours.",
+      "id": "24",
+      "name": "Tornion Rajamarkkinat",
+      "description": "Rajan molemmin puolin pidettävä markkinatapahtuma täynnä kulttuuria ja kauppaa.",
+      "adress": "Torikatu 1, Tornio",
+      "date": "2025-07-10",
+      "status": "tulossa",
       "location": {
-        "latitude": 60.9827,
-        "longitude": 25.6615
-      },
-      "adress": "Päijänteenkatu 1, Lahti",
-      "date": "2025-06-16",
-      "status": "upcoming"
+        "latitude": 65.8481,
+        "longitude": 24.1451
+      }
+    },
+    {
+      "id": "25",
+      "name": "Joensuun Metsäfestivaali",
+      "description": "Metsäteemainen festivaali luonnon, musiikin ja kestävän elämän ystäville.",
+      "adress": "Utran saari, Joensuu",
+      "date": "2025-07-29",
+      "status": "tulossa",
+      "location": {
+        "latitude": 62.5986,
+        "longitude": 29.7632
+      }
     }
   ]
 }
