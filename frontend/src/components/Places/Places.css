@@ -7,12 +7,10 @@
     --lightyellow: #fffaec;
     --white: #ffffff;
     --accent: #a0c0b0;
-
-    --background-dark: #1e1e1e;
-    --card-dark: #2b2b2b;
-    --text-light: #f1f1f1;
-    --text-muted: #b0b0b0;
-    --button-hover: #3c6b5f;
+    --dark-bg: #222831;
+    --dark-card: #393E46;
+    --dark-accent: #948979;
+    --dark-text: #DFD0B8;
 }
 
 ::selection {
@@ -306,7 +304,66 @@
     transition: background-color 0.2s ease;
 }
 
+/* Dark Theme */
 
+.darkTheme .places-header {
+    background-color: var(--dark-accent);
+}
+
+.darkTheme .places-container {
+    background: linear-gradient(to bottom, var(--dark-bg), var(--dark-card));
+}
+
+.darkTheme .places-bigTitle {
+    border-bottom: 2px solid var(--dark-accent);
+}
+
+.darkTheme .places-title {
+    color: var(--dark-text);
+    text-shadow: 1px 1px 0 var(--dark-accent);
+}
+
+.darkTheme .places-subtitle {
+    color: var(--dark-text);
+}
+
+.darkTheme .event-title {
+    color: var(--dark-text);
+    text-shadow: 1px 1px 0 var(--dark-accent);
+    border-bottom: 2px solid var(--dark-accent);
+}
+
+.darkTheme .event-title::after {
+    background-color: var(--dark-accent);
+}
+
+.darkTheme .event-content {
+    color: var(--dark-text);
+}
+
+.darkTheme .event-adres {
+    color: var(--dark-accent);
+}
+
+.darkTheme #places-menuCheckbox:checked+#places-burgerIcon .places-bar {
+    background: var(--dark-accent);
+}
+
+.darkTheme #places-menu {
+    background-color: var(--beige);
+}
+
+.darkTheme #places-menuToggle a {
+    color: var(--dark-accent);
+}
+
+.darkTheme #places-menuToggle li:hover {
+    background-color: var(--dark-accent);
+}
+
+.darkTheme #places-menuToggle li:hover a {
+    color: var(--dark-text);
+}
 
 /*? Android version */
 

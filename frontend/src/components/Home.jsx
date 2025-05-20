@@ -15,6 +15,7 @@ import SettingsIcon from "../../public/settings-icon.svg";
 import CalendarIcon from "../../public/calendar-icon.svg";
 
 import TimeSwitcher from "../TimeSwitcher.jsx";
+import WeatherWidget from "./weather/weatherWidget.jsx";
 
 const Home = () => {
   const [visible, setVisible] = useState(true);
@@ -79,12 +80,12 @@ const Home = () => {
                 components={{ 3: <Link to="/places">Places</Link> }}
               />
             </li>
-            <li>
+            {/* <li>
               <Trans
                 i18nKey="settings"
                 components={{ 4: <Link to="/settings">Settings</Link> }}
               />
-            </li>
+            </li> */}
             <li className="aboutus-active-link">
               <Trans
                 i18nKey="aboutus"
@@ -113,7 +114,17 @@ const Home = () => {
           ))}
         </span>
       </div>
-      <div className="body"></div>
+      <div className="body">
+        <WeatherWidget />
+        <section className="content">
+          <div className="content-text">
+            <Trans i18nKey="homeText" components={{ p: <p />, br: <br /> }} />
+            <footer className="content-footer">
+              © 2025 Loma Vibes Finland
+            </footer>
+          </div>
+        </section>
+      </div>
       <div className="nav-bar">
         <div className="nav-bar-container">
           <span className="nav-bar-item">

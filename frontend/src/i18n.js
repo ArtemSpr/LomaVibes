@@ -35,6 +35,8 @@ i18next
             "<p>Whether you're looking for outdoor activities, cultural experiences,or a relaxing retreat,<span>Loma Vibes Finland</span> ensures you'llnever miss out on the essence of a Finnish summer.</p>",
           AboutUsSubTitle: "Discover the essence of Finnish summer with us!",
           AboutUsTitle: "About Us",
+          homeText:
+            "<p>🇬🇧 Welcome to our Summer Events App!<br/>☀️ 🎉 🌿 Feel the magic of Finnish summer! From vibrant music festivals 🎶 and tasty street food markets 🍔 🍓 to inspiring art exhibitions 🎨 and peaceful nature escapes 🏕️ — we’ve gathered the best events from all across Finland 🇫🇮.<br/><br/>🔍 Easily find events by city, date, or your interests.<br/>📍 Discover what's happening nearby.<br/>👣 Explore new places, meet amazing people, and create unforgettable memories!<br/><br/>📅 Start planning your perfect summer today — and let it be full of sunshine and smiles! 🌈</p>",
         },
       },
       fi: {
@@ -64,6 +66,8 @@ i18next
             "<p>Etsitpä sitten ulkoilma-aktiviteetteja, kulttuurielämyksiä tai rentouttavaa lomaa, <span>Loma Vibes Finland</span> varmistaa, että et jää paitsi suomalaisen kesän ytimestä.</p>",
           AboutUsSubTitle: "Löydä suomalaisen kesän ydin kanssamme!",
           AboutUsTitle: "Tietoa meistä",
+          homeText:
+            "<p>🇫🇮 Tervetuloa kesätapahtumasovellukseemme!<br/>☀️ 🎉 🌿 Koe suomalaisen kesän taika! Eläväisestä musiikkifestivaaleista 🎶 ja herkullisista katuruokatoreista 🍔 🍓 aina inspiroiviin taidenäyttelyihin 🎨 ja rauhallisiin luontoretriitteihin 🏕️ — olemme koonneet parhaat tapahtumat ympäri Suomea 🇫🇮.<br/><br/>🔍 Etsi tapahtumia helposti kaupungin, päivämäärän tai kiinnostuksen kohteiden mukaan.<br/>📍 Löydä, mitä tapahtuu lähistölläsi.<br/>👣 Tutustu uusiin paikkoihin, tapaa mahtavia ihmisiä ja luo unohtumattomia muistoja!<br/><br/>📅 Suunnittele täydellinen kesäsi jo tänään — täynnä aurinkoa ja hymyjä! 🌈</p>",
         },
       },
     },

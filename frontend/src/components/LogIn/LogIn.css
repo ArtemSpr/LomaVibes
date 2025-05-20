@@ -75,6 +75,11 @@
     padding: 10px 60px;
 }
 
+.dropdown-icon {
+    display: flex;
+
+}
+
 
 @keyframes dropdown-slide {
     0% {

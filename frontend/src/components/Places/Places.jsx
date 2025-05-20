@@ -12,6 +12,7 @@ import { useTranslation, Trans } from "react-i18next";
 import { useEffect, useState } from "react";
 import axios from "axios";
 import TimeSwitcher from "../../TimeSwitcher.jsx";
+import ThemeSwitcher from "../../TimeSwitcher.jsx";
 
 const Places = () => {
   const { t, i18n } = useTranslation();
@@ -61,12 +62,12 @@ const Places = () => {
                 components={{ 3: <Link to="/places">Places</Link> }}
               />
             </li>
-            <li>
+            {/* <li>
               <Trans
                 i18nKey="settings"
                 components={{ 4: <Link to="/settings">Settings</Link> }}
               />
-            </li>
+            </li> */}
             <li className="aboutus-active-link">
               <Trans
                 i18nKey="aboutus"
@@ -75,6 +76,7 @@ const Places = () => {
             </li>
           </ul>
         </div>
+        <ThemeSwitcher />
         <span className="places-logo places-header-text">
           <Link to="/">LomaVibes</Link>
         </span>

@@ -9,6 +9,8 @@ import CalendarIcon from "../../../public/calendar-icon.svg";
 
 import { useTranslation, Trans } from "react-i18next";
 
+import ThemeSwitcher from "../../TimeSwitcher";
+
 const AboutUs = () => {
   const { t, i18n } = useTranslation();
 
@@ -37,28 +39,16 @@ const AboutUs = () => {
             </li>
             <li>
               <Trans
-                i18nKey="calendar"
-                components={{ 1: <Link to="/calendar">Calendar</Link> }}
-              />
-            </li>
-            <li>
-              <Trans
-                i18nKey="summerjob"
-                components={{ 2: <Link to="/summerjob">Summer Job</Link> }}
-              />
-            </li>
-            <li>
-              <Trans
                 i18nKey="places"
                 components={{ 3: <Link to="/places">Places</Link> }}
               />
             </li>
-            <li>
+            {/* <li>
               <Trans
                 i18nKey="settings"
                 components={{ 4: <Link to="/settings">Settings</Link> }}
               />
-            </li>
+            </li> */}
             <li className="aboutus-active-link">
               <Trans
                 i18nKey="aboutus"
@@ -67,6 +57,7 @@ const AboutUs = () => {
             </li>
           </ul>
         </div>
+        <ThemeSwitcher />
         <span className="aboutus-logo aboutus-header-text">
           <Link to="/">LomaVibes</Link>
         </span>
