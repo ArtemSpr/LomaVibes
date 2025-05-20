@@ -4,7 +4,7 @@ import axios from "axios";
 import Swal from "sweetalert2";
 
 import "./LogIn.css";
-import PersonIcon from "/Users/s2401573/Documents/Project/LomaVibes/public/person-icon.svg";
+import PersonIcon from "/Users/s2401573/Documents/Project/LomaVibes/frontend/public/person-icon.svg";
 
 const LogIn = () => {
   const [isOpen, setIsOpen] = useState(false);

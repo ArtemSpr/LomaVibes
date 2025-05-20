@@ -39,18 +39,6 @@ const Places = () => {
             </li>
             <li>
               <Trans
-                i18nKey="calendar"
-                components={{ 1: <Link to="/calendar">Calendar</Link> }}
-              />
-            </li>
-            <li>
-              <Trans
-                i18nKey="summerjob"
-                components={{ 2: <Link to="/summerjob">Summer Job</Link> }}
-              />
-            </li>
-            <li>
-              <Trans
                 i18nKey="places"
                 components={{ 3: <Link to="/places">Places</Link> }}
               />

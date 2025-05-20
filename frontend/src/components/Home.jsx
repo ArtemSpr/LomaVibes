@@ -1,11 +1,11 @@
 import { Link } from "react-router-dom";
-import "../styles/burger-menu.css";
-import axios from "axios";
 import { useState, useEffect } from "react";
 import { useTranslation, Trans } from "react-i18next";
 import { AnimatePresence, motion } from "framer-motion";
+import axios from "axios";
 
-import LogIn from "./LogIn/LogIn";
+import LogIn from "./LogIn/LogIn.jsx";
+import "../styles/burger-menu.css";
 import "../i18n.js";
 
 import Animatelogo from "../../public/217490777.png";
@@ -13,8 +13,6 @@ import ListIcon from "../../public/list-icon.svg";
 import JobIcon from "../../public/job-icon.svg";
 import SettingsIcon from "../../public/settings-icon.svg";
 import CalendarIcon from "../../public/calendar-icon.svg";
-
-import { motion, AnimatePresence } from "framer-motion";
 
 const Home = () => {
   const [visible, setVisible] = useState(true);
@@ -40,7 +38,7 @@ const Home = () => {
 
   useEffect(() => {
     axios
-      .get("http://localhost:3001/places")
+      .get("http://localhost:5266/api/places")
       .then((response) => {
         setNotes(response.data);
       })
