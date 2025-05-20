@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Bungee&family=Quicksand:wght@300..700&display=swap');
+
+
 .dropdown-popup {
     position: absolute;
     top: 110%;
@@ -55,6 +58,21 @@
 .dropdown-container img {
     height: clamp(30px, 5vw, 40px);
     margin-bottom: 0px;
+}
+
+.swal-title {
+    font-family: "Bungee";
+    font-size: 24px;
+}
+
+.swal-text {
+    font-family: "Quicksand";
+    font-size: 16px;
+}
+
+.swal-button {
+    font-size: 20px;
+    padding: 10px 60px;
 }
 
 

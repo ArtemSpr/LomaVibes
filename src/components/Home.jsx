@@ -14,8 +14,21 @@ import JobIcon from "../../public/job-icon.svg";
 import SettingsIcon from "../../public/settings-icon.svg";
 import CalendarIcon from "../../public/calendar-icon.svg";
 
+import { motion, AnimatePresence } from "framer-motion";
+
 const Home = () => {
   const [visible, setVisible] = useState(true);
+  const [hidden, setHidden] = useState(false);
+
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setVisible(false);
+      setTimeout(() => setHidden(true), 1000);
+    }, 3000);
+
+    return () => clearTimeout(timer);
+  }, []);
+
   const [notes, setNotes] = useState([]);
 
   const { t, i18n } = useTranslation();
@@ -38,7 +51,7 @@ const Home = () => {
 
   return (
     <div className="main">
-      <div className="animateContainer">
+      <div className={hidden ? "animateContainerOut" : "animateContainer"}>
         <AnimatePresence>
           {visible && (
             <motion.div
@@ -46,11 +59,10 @@ const Home = () => {
               animate={{ opacity: 1 }}
               exit={{ opacity: 0, scale: 0.8, y: -50 }}
               transition={{ duration: 1 }}
-              className="bg-blue-500 text-white p-6 rounded-2xl shadow-lg text-xl"
+              className="popupBox"
             >
               <span className="animateItem">
-                {" "}
-                <img className="animateLogo" src={Animatelogo}></img>
+                <img className="animateLogo" src={Animatelogo} />
               </span>
             </motion.div>
           )}
@@ -72,18 +84,6 @@ const Home = () => {
                 components={{
                   6: <Link to="/">Home</Link>,
                 }}
-              />
-            </li>
-            <li>
-              <Trans
-                i18nKey="calendar"
-                components={{ 1: <Link to="/calendar">Calendar</Link> }}
-              />
-            </li>
-            <li>
-              <Trans
-                i18nKey="summerjob"
-                components={{ 2: <Link to="/summerjob">Summer Job</Link> }}
               />
             </li>
             <li>
