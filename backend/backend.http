@@ -2,15 +2,16 @@
 
 GET {{backend_HostAddress}}/api/places
 Accept: application/json
+###
+
+GET {{backend_HostAddress}}/api/user
 
 ###
 
-POST {{backend_HostAddress}}/api/auth/register
+POST {{backend_HostAddress}}/api/user/register
 Content-Type: application/json
-Accept: application/json
 
-
-    {
-    "Username": "n2ewuser",
-    "Password": "mypassword"
-  }
+{
+  "Username": "admin",
+  "Password": "admin"
+}
