@@ -1,8 +1,17 @@
 import "./Settings.css";
 import { Link } from "react-router-dom";
 import LogIn from "../LogIn/LogIn";
+import { useTranslation, Trans } from "react-i18next";
+import "../../i18n.js";
 
 const SettingsPage = () => {
+  const { t, i18n } = useTranslation();
+
+  const lngs = {
+    fi: { nativeName: "Fi/" },
+    en: { nativeName: "Eng" },
+  };
+
   return (
     <div className="settings-page">
       <div className="settings-header">
@@ -17,12 +26,6 @@ const SettingsPage = () => {
           <ul id="settings-menu">
             <li>
               <Link to="/">Home</Link>
-            </li>
-            <li>
-              <Link to="/calendar">Calendar</Link>
-            </li>
-            <li>
-              <Link to="/summerjob">Summer Job</Link>
             </li>
             <li>
               <Link to="/places">Places</Link>
@@ -40,30 +43,40 @@ const SettingsPage = () => {
         </span>
         <span className="settings-header-text">
           <LogIn />
-          Fi/En
+          {Object.keys(lngs).map((lng) => (
+            <button
+              type="submit"
+              key={lng}
+              onClick={() => i18n.changeLanguage(lng)}
+              disabled={i18n.resolvedLanguage === lng}
+              className="languageBtn"
+            >
+              {lngs[lng].nativeName}
+            </button>
+          ))}
         </span>
       </div>
 
       <div className="settings-title">
-        <h1>Page settings</h1>
+        <h1>{t("settingsTitle")}</h1>
       </div>
 
       <div className="settings-container">
         <div className="settings-section">
-          <h2>Main settings</h2>
+          <h2>{t("settingsSection")}</h2>
         </div>
 
         <div className="settings-section">
-          <h2>Some settings</h2>
+          <h2>{t("settingsSection")}</h2>
         </div>
 
         <div className="settings-section">
-          <h2>Some another settings</h2>
+          <h2>{t("settingsSection")}</h2>
         </div>
       </div>
 
       <div className="settings-footer">
-        <button className="save-button">Save changes</button>
+        <button className="save-button">{t("settingsbutton")}</button>
       </div>
     </div>
   );

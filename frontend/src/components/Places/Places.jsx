@@ -9,6 +9,8 @@ import SettingsIcon from "../../../public/settings-icon.svg";
 import CalendarIcon from "../../../public/calendar-icon.svg";
 
 import { useTranslation, Trans } from "react-i18next";
+import { useEffect, useState } from "react";
+import axios from "axios";
 
 const Places = () => {
   const { t, i18n } = useTranslation();
@@ -17,6 +19,19 @@ const Places = () => {
     fi: { nativeName: "Fi/" },
     en: { nativeName: "Eng" },
   };
+
+  const [notes, setNotes] = useState([]);
+
+  useEffect(() => {
+    axios
+      .get("http://localhost:5266/api/places")
+      .then((response) => {
+        setNotes(response.data);
+      })
+      .catch((error) => {
+        console.error("There was an error fetching the notes!", error);
+      });
+  }, []);
 
   return (
     <div className="places-container">
@@ -77,25 +92,18 @@ const Places = () => {
       </div>
 
       <header className="places-bigTitle">
-        <h1 className="places-title">{t("PlacesTitle")}</h1>
-        <p className="places-subtitle">{t("PlacesSubTitle")}</p>
+        <h1 className="places-title">{t("placesTitle")}</h1>
+        <p className="places-subtitle">{t("placesMean")}</p>
       </header>
-      <section className="places-content">
-        <div className="places-content-text">
-          <Trans
-            i18nKey="placesFirstIndent"
-            components={{ p: <p />, span: <span className="highlight" /> }}
-          />
-
-          <Trans i18nKey="placesSecondIndent" />
-          <Trans
-            i18nKey="placesThirdIndent"
-            components={{ span: <span className="highlight"></span> }}
-          />
-
-          <footer className="places-footer">© 2025 Loma Vibes Finland</footer>
-        </div>
-      </section>
+      <ul className="event-list">
+        {notes.map((notes) => (
+          <li className="body-item">
+            <div className="event-title">{notes.name}</div>
+            <div className="event-content">{notes.description}</div>
+            <div className="event-adres">{notes.adress}</div>
+          </li>
+        ))}
+      </ul>
       <div className="nav-bar">
         <div className="nav-bar-container">
           <span className="nav-bar-item">

@@ -21,6 +21,11 @@ i18next
           password: "Password",
           login: "Log In",
           register: "Register",
+          placesTitle: "Places",
+          placesMean: "Place list",
+          settingsTitle: "Settings",
+          settingsSection: "Some settings",
+          settingsbutton: "Save changes",
           aboutFirstIndent:
             "<p>Welcome to <span>Loma Vibes Finland</span>, your go-to guide for exploring the best summer events, must-see destinations, and exciting places to visit across Finland! Our team is passionate about showcasing the beauty and vibrant culture of Finland, helping both locals and tourists make the most of their summer adventures.</p>",
           aboutSecondIndent:
@@ -43,6 +48,11 @@ i18next
           password: "Salasana",
           login: "Kirjaudu sisään",
           register: "Rekisteröidy",
+          placesTitle: "Paikat",
+          placesMean: "Paikkalista",
+          settingsTitle: "Asetukset",
+          settingsSection: "Johtaa asetuksia",
+          settingsbutton: "Tallenna muutokset",
           aboutFirstIndent:
             "<p>Tervetuloa <span>Loma Vibes Finlandiin</span>, oppaaseesi parhaisiin kesätapahtumiin, nähtävyyksiin ja jännittäviin paikkoihin ympäri Suomea! Tiimimme on intohimoinen esittelemään Suomen kauneutta ja elävää kulttuuria, auttaen sekä paikallisia että matkailijoita saamaan kaiken irti kesän seikkailuista.</p>",
           aboutSecondIndent:

@@ -22,12 +22,10 @@ const Home = () => {
     const timer = setTimeout(() => {
       setVisible(false);
       setTimeout(() => setHidden(true), 1000);
-    }, 3000);
+    }, 2000);
 
     return () => clearTimeout(timer);
   }, []);
-
-  const [notes, setNotes] = useState([]);
 
   const { t, i18n } = useTranslation();
 
@@ -35,17 +33,6 @@ const Home = () => {
     fi: { nativeName: "Fi/" },
     en: { nativeName: "Eng" },
   };
-
-  useEffect(() => {
-    axios
-      .get("http://localhost:5266/api/places")
-      .then((response) => {
-        setNotes(response.data);
-      })
-      .catch((error) => {
-        console.error("There was an error fetching the notes!", error);
-      });
-  }, []);
 
   return (
     <div className="main">
@@ -122,17 +109,7 @@ const Home = () => {
           ))}
         </span>
       </div>
-      <div className="body">
-        <ul className="event-list">
-          {notes.map((notes) => (
-            <li className="body-item">
-              <div className="event-title">{notes.name}</div>
-              <div className="event-content">{notes.description}</div>
-              <div className="event-adres">{notes.adress}</div>
-            </li>
-          ))}
-        </ul>
-      </div>
+      <div className="body"></div>
       <div className="nav-bar">
         <div className="nav-bar-container">
           <span className="nav-bar-item">
