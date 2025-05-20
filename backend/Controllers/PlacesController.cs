@@ -48,4 +48,29 @@ public class PlacesController : ControllerBase
         await WritePlacesAsync(places);
         return Ok(newPlace);
     }
+    [HttpDelete("{id}")]
+    public async Task<IActionResult> Delete(int id)
+    {
+        var places = await ReadPlacesAsync();
+        var place = places.FirstOrDefault(p => p.Id == id);
+        if (place == null)
+            return NotFound($"Place with ID {id} not found");
+
+        places.Remove(place);
+        await WritePlacesAsync(places);
+        return Ok($"Place with ID {id} deleted");
+    }
+    [HttpPut("{id}")]
+    public async Task<IActionResult> Put(int id, [FromBody] Place updatedPlace)
+    {
+        var places = await ReadPlacesAsync();
+        var index = places.FindIndex(p => p.Id == id);
+        if (index == -1)
+            return NotFound($"Place with ID {id} not found");
+
+        places[index] = updatedPlace;
+        await WritePlacesAsync(places);
+        return Ok(updatedPlace);
+    }
+
 }

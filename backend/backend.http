@@ -12,6 +12,20 @@ POST {{backend_HostAddress}}/api/auth/register
 Content-Type: application/json
 
 {
-  "Username": "Valentin",
-  "Password": "wellnoteone"
+  "Username": "check",
+  "Password": "vsd"
 }
+
+###
+PUT {{backend_HostAddress}}/api/user/password
+Content-Type: application/json
+
+{
+  "Username": "a",
+  "NewPassword": "123"
+}
+
+
+
+###
+DELETE {{backend_HostAddress}}/api/user/7
