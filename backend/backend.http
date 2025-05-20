@@ -8,10 +8,19 @@ GET {{backend_HostAddress}}/api/user
 
 ###
 
-POST {{backend_HostAddress}}/api/auth/register
+POST {{backend_HostAddress}}/api/auth/login
 Content-Type: application/json
 
 {
   "Username": "Valentin",
   "Password": "wellnoteone"
+}
+
+###
+POST {{backend_HostAddress}}/api/auth/register
+Content-Type: application/json
+
+{
+  "Username": "Artem",
+  "Password": "1234"
 }
