@@ -1,0 +1,75 @@
+2025-05-20 16:17:54.017 +03:00 [INF] Now listening on: http://localhost:5266
+2025-05-20 16:17:54.067 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-05-20 16:17:54.068 +03:00 [INF] Hosting environment: Development
+2025-05-20 16:17:54.068 +03:00 [INF] Content root path: /Users/s2401575/Documents/portfolio/ohjelmointi/ohjelmistokehitysprojekti-1/LomaVibes/backend
+2025-05-20 16:17:58.898 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5266/ - null null
+2025-05-20 16:17:58.916 +03:00 [WRN] Failed to determine the https port for redirect.
+2025-05-20 16:17:58.919 +03:00 [ERR] HTTP GET / responded 404 in 3.7025 ms
+2025-05-20 16:17:59.055 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5266/ - 404 0 null 157.8666ms
+2025-05-20 16:17:59.057 +03:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5266/, Response status code: 404
+2025-05-20 16:18:57.959 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5266/api/places - null null
+2025-05-20 16:18:57.964 +03:00 [INF] Executing endpoint 'PlacesController.Get (backend)'
+2025-05-20 16:18:57.976 +03:00 [INF] Route matched with {action = "Get", controller = "Places"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Get() on controller PlacesController (backend).
+2025-05-20 16:18:57.996 +03:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Place, backend, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-05-20 16:18:58.000 +03:00 [INF] Executed action PlacesController.Get (backend) in 22.8202ms
+2025-05-20 16:18:58.001 +03:00 [INF] Executed endpoint 'PlacesController.Get (backend)'
+2025-05-20 16:18:58.001 +03:00 [INF] HTTP GET /api/places responded 200 in 38.6512 ms
+2025-05-20 16:18:58.002 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5266/api/places - 200 null application/json; charset=utf-8 43.8819ms
+2025-05-20 16:20:32.374 +03:00 [INF] Request starting HTTP/1.1 POST http://localhost:5266/api/auth/login - null 100
+2025-05-20 16:20:32.378 +03:00 [INF] Executing endpoint 'AuthController.Login (backend)'
+2025-05-20 16:20:32.385 +03:00 [INF] Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Login(LoginRequest) on controller AuthController (backend).
+2025-05-20 16:20:32.392 +03:00 [INF] Executing ObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ProblemDetails'.
+2025-05-20 16:20:32.401 +03:00 [INF] Executed action AuthController.Login (backend) in 16.052ms
+2025-05-20 16:20:32.401 +03:00 [INF] Executed endpoint 'AuthController.Login (backend)'
+2025-05-20 16:20:32.401 +03:00 [INF] HTTP POST /api/auth/login responded 415 in 23.4744 ms
+2025-05-20 16:20:32.401 +03:00 [INF] Request finished HTTP/1.1 POST http://localhost:5266/api/auth/login - 415 null application/problem+json; charset=utf-8 27.3853ms
+2025-05-20 16:21:12.838 +03:00 [INF] Request starting HTTP/1.1 POST http://localhost:5266/api/auth/login - null 92
+2025-05-20 16:21:12.840 +03:00 [INF] Executing endpoint 'AuthController.Login (backend)'
+2025-05-20 16:21:12.840 +03:00 [INF] Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Login(LoginRequest) on controller AuthController (backend).
+2025-05-20 16:21:12.841 +03:00 [INF] Executing ObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ProblemDetails'.
+2025-05-20 16:21:12.842 +03:00 [INF] Executed action AuthController.Login (backend) in 1.9136ms
+2025-05-20 16:21:12.843 +03:00 [INF] Executed endpoint 'AuthController.Login (backend)'
+2025-05-20 16:21:12.843 +03:00 [INF] HTTP POST /api/auth/login responded 415 in 3.4250 ms
+2025-05-20 16:21:12.844 +03:00 [INF] Request finished HTTP/1.1 POST http://localhost:5266/api/auth/login - 415 null application/problem+json; charset=utf-8 5.6732ms
+2025-05-20 16:22:52.528 +03:00 [INF] Request starting HTTP/1.1 POST http://localhost:5266/api/auth/register - null 92
+2025-05-20 16:22:52.529 +03:00 [INF] Executing endpoint 'AuthController.Register (backend)'
+2025-05-20 16:22:52.531 +03:00 [INF] Route matched with {action = "Register", controller = "Auth"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Register(LoginRequest) on controller AuthController (backend).
+2025-05-20 16:22:52.531 +03:00 [INF] Executing ObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ProblemDetails'.
+2025-05-20 16:22:52.531 +03:00 [INF] Executed action AuthController.Register (backend) in 0.4915ms
+2025-05-20 16:22:52.531 +03:00 [INF] Executed endpoint 'AuthController.Register (backend)'
+2025-05-20 16:22:52.532 +03:00 [INF] HTTP POST /api/auth/register responded 415 in 2.3738 ms
+2025-05-20 16:22:52.532 +03:00 [INF] Request finished HTTP/1.1 POST http://localhost:5266/api/auth/register - 415 null application/problem+json; charset=utf-8 4.009ms
+2025-05-20 16:26:54.670 +03:00 [INF] Request starting HTTP/1.1 POST http://localhost:5266/api/auth/register - application/json 66
+2025-05-20 16:26:54.673 +03:00 [INF] Executing endpoint 'AuthController.Register (backend)'
+2025-05-20 16:26:54.673 +03:00 [INF] Route matched with {action = "Register", controller = "Auth"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Register(LoginRequest) on controller AuthController (backend).
+2025-05-20 16:26:54.695 +03:00 [INF] Executing ConflictObjectResult, writing value of type 'System.String'.
+2025-05-20 16:26:54.696 +03:00 [INF] Executed action AuthController.Register (backend) in 22.287ms
+2025-05-20 16:26:54.696 +03:00 [INF] Executed endpoint 'AuthController.Register (backend)'
+2025-05-20 16:26:54.696 +03:00 [INF] HTTP POST /api/auth/register responded 409 in 23.6630 ms
+2025-05-20 16:26:54.697 +03:00 [INF] Request finished HTTP/1.1 POST http://localhost:5266/api/auth/register - 409 null application/json; charset=utf-8 26.6598ms
+2025-05-20 16:27:12.087 +03:00 [INF] Request starting HTTP/1.1 POST http://localhost:5266/api/auth/login - application/json 66
+2025-05-20 16:27:12.088 +03:00 [INF] Executing endpoint 'AuthController.Login (backend)'
+2025-05-20 16:27:12.088 +03:00 [INF] Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Login(LoginRequest) on controller AuthController (backend).
+2025-05-20 16:27:12.091 +03:00 [INF] Executing OkObjectResult, writing value of type 'System.String'.
+2025-05-20 16:27:12.091 +03:00 [INF] Executed action AuthController.Login (backend) in 2.6742ms
+2025-05-20 16:27:12.092 +03:00 [INF] Executed endpoint 'AuthController.Login (backend)'
+2025-05-20 16:27:12.092 +03:00 [INF] HTTP POST /api/auth/login responded 200 in 4.0031 ms
+2025-05-20 16:27:12.092 +03:00 [INF] Request finished HTTP/1.1 POST http://localhost:5266/api/auth/login - 200 null application/json; charset=utf-8 5.6326ms
+2025-05-20 16:31:59.719 +03:00 [INF] Request starting HTTP/1.1 POST http://localhost:5266/api/auth/register - application/json 67
+2025-05-20 16:31:59.722 +03:00 [INF] Executing endpoint 'AuthController.Register (backend)'
+2025-05-20 16:31:59.723 +03:00 [INF] Route matched with {action = "Register", controller = "Auth"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Register(LoginRequest) on controller AuthController (backend).
+2025-05-20 16:31:59.727 +03:00 [INF] Executing OkObjectResult, writing value of type 'System.String'.
+2025-05-20 16:31:59.727 +03:00 [INF] Executed action AuthController.Register (backend) in 4.1548ms
+2025-05-20 16:31:59.728 +03:00 [INF] Executed endpoint 'AuthController.Register (backend)'
+2025-05-20 16:31:59.728 +03:00 [INF] HTTP POST /api/auth/register responded 200 in 5.3900 ms
+2025-05-20 16:31:59.728 +03:00 [INF] Request finished HTTP/1.1 POST http://localhost:5266/api/auth/register - 200 null application/json; charset=utf-8 8.5007ms
+2025-05-20 16:40:20.489 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5266/api/places - null null
+2025-05-20 16:40:20.492 +03:00 [INF] CORS policy execution successful.
+2025-05-20 16:40:20.493 +03:00 [INF] Executing endpoint 'PlacesController.Get (backend)'
+2025-05-20 16:40:20.493 +03:00 [INF] Route matched with {action = "Get", controller = "Places"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Get() on controller PlacesController (backend).
+2025-05-20 16:40:20.502 +03:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Place, backend, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-05-20 16:40:20.503 +03:00 [INF] Executed action PlacesController.Get (backend) in 9.4551ms
+2025-05-20 16:40:20.503 +03:00 [INF] Executed endpoint 'PlacesController.Get (backend)'
+2025-05-20 16:40:20.503 +03:00 [INF] HTTP GET /api/places responded 200 in 12.1298 ms
+2025-05-20 16:40:20.504 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5266/api/places - 200 null application/json; charset=utf-8 14.9488ms
+2025-05-20 16:41:01.463 +03:00 [INF] Application is shutting down...

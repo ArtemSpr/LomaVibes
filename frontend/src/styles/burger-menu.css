@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+
+#menuToggle {
+    position: relative;
+    z-index: 1;
+}
+
+#menuCheckbox {
+    display: none;
+}
+
+#burgerIcon {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    cursor: pointer;
+    z-index: 3;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+#burgerIcon .bar {
+    width: 33px;
+    height: 4px;
+    background: var(--beige);
+    border-radius: 3px;
+    transition: all 0.4s ease;
+}
+
+#menuCheckbox:checked+#burgerIcon .bar {
+    background: var(--lightgrey);
+}
+
+#menuCheckbox:checked+#burgerIcon .bar:nth-child(1) {
+    transform: rotate(45deg) translate(5px, 8px);
+}
+
+#menuCheckbox:checked+#burgerIcon .bar:nth-child(2) {
+    opacity: 0;
+}
+
+#menuCheckbox:checked+#burgerIcon .bar:nth-child(3) {
+    transform: rotate(-45deg) translate(5px, -8px);
+}
+
+#menu {
+    position: absolute;
+    left: -300px;
+    top: 80px;
+    width: 200px;
+    height: 725px;
+    margin: -100px 0 0 -50px;
+    /* padding: 50px; */
+    padding-top: 125px;
+    background: var(--lightyellow);
+    list-style: none;
+    transition: left 0.5s;
+    color: var(--lightgrey);
+    font-family: sans-serif;
+}
+
+#menu li {
+    padding: 10px 0;
+    font-size: 22px;
+    color: var(--green);
+    transition: color 0.3s;
+}
+
+#menu li:hover {
+    color: var(--lightgrey);
+}
+
+#menuCheckbox:checked~#menu {
+    left: 40px;
+}

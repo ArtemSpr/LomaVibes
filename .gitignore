@@ -1,0 +1,43 @@
+# === FRONTEND (React + Vite) ===
+frontend/node_modules/
+frontend/dist/
+frontend/.env
+frontend/.vite/
+frontend/.DS_Store
+**/node_modules/
+# === BACKEND (ASP.NET) ===
+backend/bin/
+backend/obj/
+backend/.vs/
+backend/*.user
+backend/*.suo
+backend/*.db
+backend/*.db-shm
+backend/*.db-wal
+backend/.vscode/
+
+# Ignore secrets & config overrides
+backend/appsettings.Development.json
+backend/appsettings.Local.json
+backend/Secrets.json
+*.PublishSettings
+
+# === SYSTEM / EDITOR FILES ===
+*.log
+logs/
+*.tmp
+temp/
+*.pid
+*.swp
+*.sln.docstates
+
+# OS-specific
+.DS_Store
+Thumbs.db
+
+# IDE-specific
+.idea/
+.vscode/
+*.ncrunch*
+*.localhistory/
+*.resharper*
