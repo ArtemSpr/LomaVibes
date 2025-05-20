@@ -54,9 +54,3 @@ public class LoginRequest
     public string Password { get; set; } = "";
 }
 
-// public class User
-// {
-//     public int Id { get; set; }  // Обычно автоинкремент
-//     public string Username { get; set; } = "";
-//     public string Password { get; set; } = "";
-// }

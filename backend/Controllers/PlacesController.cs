@@ -5,7 +5,7 @@ using System.Text.Json;
 [Route("api/[controller]")]
 public class PlacesController : ControllerBase
 {
-    private readonly string _filePath = Path.Combine(Directory.GetCurrentDirectory(), "App_Data", "places.json");
+    private readonly string _filePath = Path.Combine(Directory.GetCurrentDirectory(), "AppData", "places.json");
 
     private async Task<List<Place>> ReadPlacesAsync()
     {
@@ -23,7 +23,7 @@ public class PlacesController : ControllerBase
 
     public class RootPlaces
     {
-        public List<Place> Places { get; set; }
+        public required List<Place> Places { get; set; }
     }
 
     private async Task WritePlacesAsync(List<Place> places)

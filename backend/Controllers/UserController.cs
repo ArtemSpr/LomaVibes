@@ -19,19 +19,4 @@ public class UserController : ControllerBase
         var users = _db.Users.ToList();
         return Ok(users);
     }
-
-    // POST: api/user/register
-    [HttpPost("register")]
-    public IActionResult Register([FromBody] User user)
-    {
-        if (_db.Users.Any(u => u.Username == user.Username))
-        {
-            return Conflict("Username already exists");
-        }
-
-        _db.Users.Add(user);
-        _db.SaveChanges();
-
-        return Ok("User registered");
-    }
 }
