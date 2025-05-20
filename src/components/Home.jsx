@@ -3,17 +3,19 @@ import "../styles/burger-menu.css";
 import axios from "axios";
 import { useState, useEffect } from "react";
 import { useTranslation, Trans } from "react-i18next";
+import { AnimatePresence, motion } from "framer-motion";
 
 import LogIn from "./LogIn/LogIn";
 import "../i18n.js";
 
-// import Animatelogo from "../public/217490777.png";
+import Animatelogo from "../../public/217490777.png";
 import ListIcon from "../../public/list-icon.svg";
 import JobIcon from "../../public/job-icon.svg";
 import SettingsIcon from "../../public/settings-icon.svg";
 import CalendarIcon from "../../public/calendar-icon.svg";
 
 const Home = () => {
+  const [visible, setVisible] = useState(true);
   const [notes, setNotes] = useState([]);
 
   const { t, i18n } = useTranslation();
@@ -36,24 +38,24 @@ const Home = () => {
 
   return (
     <div className="main">
-      {/* <div className="animateContainer">
-      <AnimatePresence>
-        {visible && (
-          <motion.div
-            initial={{ opacity: 1, scale: 1 }}
-            animate={{ opacity: 1 }}
-            exit={{ opacity: 0, scale: 0.8, y: -50 }}
-            transition={{ duration: 1 }}
-            className="bg-blue-500 text-white p-6 rounded-2xl shadow-lg text-xl"
-          >
-            <span className="animateItem">
-              {" "}
-              <img className="animateLogo" src={Animatelogo}></img>
-            </span>
-          </motion.div>
-        )}
-      </AnimatePresence>
-    </div> */}
+      <div className="animateContainer">
+        <AnimatePresence>
+          {visible && (
+            <motion.div
+              initial={{ opacity: 1, scale: 1 }}
+              animate={{ opacity: 1 }}
+              exit={{ opacity: 0, scale: 0.8, y: -50 }}
+              transition={{ duration: 1 }}
+              className="bg-blue-500 text-white p-6 rounded-2xl shadow-lg text-xl"
+            >
+              <span className="animateItem">
+                {" "}
+                <img className="animateLogo" src={Animatelogo}></img>
+              </span>
+            </motion.div>
+          )}
+        </AnimatePresence>
+      </div>
       <div className="header">
         <div id="menuToggle">
           <input type="checkbox" id="menuCheckbox" />
