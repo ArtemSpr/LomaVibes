@@ -316,6 +316,14 @@
         width: 80vw;
         margin-left: 1vw;
     }
+
+    .theme-switcher {
+        top: 3.4vh;
+    }
+
+    .theme-switcher {
+        left: clamp(150px, 3rem, 4rem);
+    }
 }
 
 /*? Tablet version  */
@@ -334,6 +342,11 @@
         font-size: clamp(28px, 3vw, 40px);
         padding-top: 10px;
         margin-left: 3px;
+    }
+
+    .theme-switcher {
+        left: clamp(100px, 45vw, 200px);
+        top: 3.5vh;
     }
 
     .aboutus-title {

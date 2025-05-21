@@ -1,34 +1,34 @@
 .weather-container {
     display: flex;
     justify-content: center;
-    /* Центрування по горизонталі */
     gap: 2rem;
-    /* Відстань між блоками */
     flex-wrap: wrap;
-    /* Переносить на наступний рядок на вузьких екранах */
     padding: 2rem 0;
 }
 
 .city-weather-block {
-    background-color: #393E46;
+    background-color: #ffffff;
     border-radius: 1.2rem;
     padding: 3vh 4vw;
     box-shadow: 0 0.5rem 2rem rgba(0, 0, 0, 0.3);
     font-size: 18px;
     line-height: 1.6;
-    color: #DFD0B8;
+    color: #393E46;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     cursor: default;
     user-select: none;
-
-    /* Для розміщення в рядку */
     flex: 1 1 280px;
-    /* мінімальна ширина 280px, може розтягуватись */
     max-width: 320px;
-    min-width: 280px;
+    min-width: 250px;
 }
 
-.city-weather-block:hover {
+.darkTheme .city-weather-block {
+    background-color: #393E46;
+    box-shadow: 0 0.5rem 2rem rgba(0, 0, 0, 0.3);
+    color: #DFD0B8;
+}
+
+.darkTheme .city-weather-block:hover {
     transform: translateY(-8px);
     box-shadow: 0 1rem 3rem rgba(220, 194, 80, 0.5);
 }
@@ -38,7 +38,7 @@
     margin-bottom: 0.8rem;
     font-weight: 700;
     letter-spacing: 0.05em;
-    text-shadow: 1px 1px 2px #00796b;
+
 }
 
 .city-weather-block p {

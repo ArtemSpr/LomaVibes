@@ -37,6 +37,10 @@ i18next
           AboutUsTitle: "About Us",
           homeText:
             "<p>🇬🇧 Welcome to our Summer Events App!<br/>☀️ 🎉 🌿 Feel the magic of Finnish summer! From vibrant music festivals 🎶 and tasty street food markets 🍔 🍓 to inspiring art exhibitions 🎨 and peaceful nature escapes 🏕️ — we’ve gathered the best events from all across Finland 🇫🇮.<br/><br/>🔍 Easily find events by city, date, or your interests.<br/>📍 Discover what's happening nearby.<br/>👣 Explore new places, meet amazing people, and create unforgettable memories!<br/><br/>📅 Start planning your perfect summer today — and let it be full of sunshine and smiles! 🌈</p>",
+          temperature: "Temperature",
+          description: "Weather description",
+          humidity: "Humidity",
+          wind: "Wind speed",
         },
       },
       fi: {
@@ -68,6 +72,10 @@ i18next
           AboutUsTitle: "Tietoa meistä",
           homeText:
             "<p>🇫🇮 Tervetuloa kesätapahtumasovellukseemme!<br/>☀️ 🎉 🌿 Koe suomalaisen kesän taika! Eläväisestä musiikkifestivaaleista 🎶 ja herkullisista katuruokatoreista 🍔 🍓 aina inspiroiviin taidenäyttelyihin 🎨 ja rauhallisiin luontoretriitteihin 🏕️ — olemme koonneet parhaat tapahtumat ympäri Suomea 🇫🇮.<br/><br/>🔍 Etsi tapahtumia helposti kaupungin, päivämäärän tai kiinnostuksen kohteiden mukaan.<br/>📍 Löydä, mitä tapahtuu lähistölläsi.<br/>👣 Tutustu uusiin paikkoihin, tapaa mahtavia ihmisiä ja luo unohtumattomia muistoja!<br/><br/>📅 Suunnittele täydellinen kesäsi jo tänään — täynnä aurinkoa ja hymyjä! 🌈</p>",
+          temperature: "Lämpötila",
+          description: "Sään kuvaus",
+          humidity: "Kosteus",
+          wind: "Tuulen nopeus",
         },
       },
     },

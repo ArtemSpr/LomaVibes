@@ -328,6 +328,10 @@ button:focus-visible {
     background-color: var(--green);
   }
 
+  .theme-switcher {
+    left: clamp(100px, 3rem, 4rem);
+  }
+
   .header {
     display: flex;
     width: 100%;
@@ -394,6 +398,12 @@ button:focus-visible {
     height: 75px;
     width: 75px;
   }
+
+  .content {
+    width: 85vw;
+    margin: 5vw 0 25vw 8vw;
+    color: var(--dark-bg);
+  }
 }
 
 /* Tablet Styles */
@@ -434,14 +444,23 @@ button:focus-visible {
     width: 75px;
   }
 
+  .theme-switcher {
+    position: absolute;
+    margin-left: clamp(0, 5px, 100px);
+    margin-top: 0;
+  }
+
   .header-text {
     display: flex;
-    align-items: flex-end;
-    gap: 10px;
+    align-items: center;
     color: var(--beige);
     font-size: clamp(2vw, 4vw, 4vw);
     padding-top: clamp(2vh, 2vh, 2vh);
     padding-bottom: clamp(2vh, 2vh, 2vh);
+  }
+
+  .header-text>*:first-child {
+    margin-right: 1rem;
   }
 
   .logo {
@@ -489,6 +508,12 @@ button:focus-visible {
     height: 75px;
     width: 75px;
   }
+
+  .content {
+    width: 85vw;
+    margin: 5vw 0 15vw 8vw;
+    color: var(--dark-bg);
+  }
 }
 
 /* Desktop Styles */
@@ -532,7 +557,7 @@ button:focus-visible {
   }
 
   .logo {
-    margin-left: 200px;
+    margin-left: 100px;
   }
 
   .body-item {

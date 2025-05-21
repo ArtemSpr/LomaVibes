@@ -3,9 +3,8 @@ import { Link } from "react-router-dom";
 import LogIn from "../LogIn/LogIn";
 
 import ListIcon from "../../../public/list-icon.svg";
-import JobIcon from "../../../public/job-icon.svg";
-import SettingsIcon from "../../../public/settings-icon.svg";
-import CalendarIcon from "../../../public/calendar-icon.svg";
+import HomeIcon from "../../../public/home-page.svg";
+import AboutUsIcon from "../../../public/about-us.svg";
 
 import { useTranslation, Trans } from "react-i18next";
 
@@ -100,13 +99,8 @@ const AboutUs = () => {
       <div className="nav-bar">
         <div className="nav-bar-container">
           <span className="nav-bar-item">
-            <Link to="/summerjob">
-              <img src={JobIcon}></img>
-            </Link>
-          </span>
-          <span className="nav-bar-item">
-            <Link to="/calendar">
-              <img src={CalendarIcon}></img>
+            <Link to="/">
+              <img src={HomeIcon}></img>
             </Link>
           </span>
           <span className="nav-bar-item">
@@ -115,8 +109,8 @@ const AboutUs = () => {
             </Link>
           </span>
           <span className="nav-bar-item">
-            <Link to="/settings">
-              <img src={SettingsIcon}></img>
+            <Link to="/aboutus">
+              <img src={AboutUsIcon}></img>
             </Link>
           </span>
         </div>

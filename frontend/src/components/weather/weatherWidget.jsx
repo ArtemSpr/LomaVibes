@@ -1,5 +1,8 @@
 import "./weather.css";
 import React, { useEffect, useState } from "react";
+import { useTranslation, Trans } from "react-i18next";
+
+import "../../i18n.js";
 
 const API_KEY = "5fcf12dc7ab9215a2f9a553a494db439";
 
@@ -12,6 +15,13 @@ const cities = [
 const WeatherWidget = () => {
   const [weatherData, setWeatherData] = useState({});
   const [loading, setLoading] = useState(true);
+
+  const { t, i18n } = useTranslation();
+
+  const lngs = {
+    fi: { nativeName: "Fi/" },
+    en: { nativeName: "Eng" },
+  };
 
   useEffect(() => {
     const fetchWeather = async () => {
@@ -56,13 +66,13 @@ const WeatherWidget = () => {
                 {city.emoji} {city.name}
               </h3>
               <p>
-                🌡️ Temperature: {weather.main.temp} °C
+                🌡️ {t("temperature")}: {weather.main.temp} °C
                 <br />
-                🌤️ Weather: {weather.weather[0].description}
+                🌤️ {t("description")}: {weather.weather[0].description}
                 <br />
-                💧 Humidity: {weather.main.humidity} %
+                💧 {t("humidity")}: {weather.main.humidity} %
                 <br />
-                💨 Wind Speed: {weather.wind.speed} m/s
+                💨 {t("wind")} Speed: {weather.wind.speed} m/s
               </p>
             </div>
           );
